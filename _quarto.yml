@@ -11,10 +11,18 @@ website:
         text: Resume
       - href: ./Portfolio/PortfolioTest.qmd
         text: Portfolio
+      - text: Other Work
+        menu: 
+          - href: ./Cat Photos/Cats.qmd
+            text: Projects
+          - href: ./Cat Photos/Cats.qmd
+            text: Shiny
     right:
       - href: ./Cat Photos/Cats.qmd
         text: Cat Photos
-      - about.qmd
+      - icon: info
+        href: about.qmd
+        text: " "
       
   page-footer:
       center:

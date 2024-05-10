@@ -1,6 +1,6 @@
 ---
 title: "Resume"
-date: "5-10-2024"
+date: "5-8-2024"
 format:
   html: 
     grid:
