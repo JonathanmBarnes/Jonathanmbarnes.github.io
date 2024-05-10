@@ -1,1 +1,8 @@
+---
+title: "Resume"
+format: 
+  html: 
+    embed-resources: true
+---
 
+{{< html "Resume.html" >}}
