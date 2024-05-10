@@ -1,0 +1,20 @@
+{
+  "index.qmd": {
+    "index.html": "973723af"
+  },
+  "about.qmd": {
+    "about.html": "661135a1"
+  },
+  "Shiny Apps/ShinyAppExamples.qmd": {
+    "ShinyAppExamples.html": "f3956c7a"
+  },
+  "Projects/ProjectsTest.qmd": {
+    "ProjectsTest.html": "6bee120b"
+  },
+  "Resume/Resume.qmd": {
+    "Resume.html": "56df6c34"
+  },
+  "Portfolio/PortfolioTest.qmd": {
+    "PortfolioTest.html": "a9a9f732"
+  }
+}
