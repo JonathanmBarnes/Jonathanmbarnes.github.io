@@ -1,0 +1,14 @@
+{
+  "hash": "5e50cdb2b37bfa4d2b2a68b7f4eb0c17",
+  "result": {
+    "markdown": "---\nformat:\n  html: \n    grid:\n      sidebar-width: 0px\n      body-width: 900px\n      margin-width: 0px\n      gutter-width: 1.5rem\n---\n\n::: {.cell}\n\n:::\n\n![](./IMG_4400.jpeg)\n\n\n![](./IMG_4576.jpeg) ![](./IMG_4581.jpeg) ![](./IMG_4640.jpeg) ![](./IMG_4669.jpeg) ![](./IMG_4677.jpeg) ![](./IMG_4713.jpeg) ![](./IMG_4715.jpeg) ![](./IMG_4726.jpeg) ![](./IMG_4748.jpeg) ![](./IMG_4763.jpeg) ![](./IMG_4783.jpeg) ![](./IMG_4787.jpeg) ![](./IMG_4789.jpeg) ![](./IMG_4798.jpeg)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

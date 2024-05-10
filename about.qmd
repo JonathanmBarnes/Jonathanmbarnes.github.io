@@ -1,5 +1,10 @@
 ---
 title: "About"
+about:
+  template: jolla
+  image: ./Resume_JonathanBarnes.pdf
+  image-width: 1000px
+  image-shape: rounded
 ---
 
 About this site

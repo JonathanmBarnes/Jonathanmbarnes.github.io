@@ -1,15 +1,46 @@
 ---
 title: "Jonathan Barnes"
 about:
-  template: jolla
+  id: headshot-intro
+  template: trestles
   image: Home/Headshot1.png
   image-width: 350px
   image-shape: rounded
-  links:
-    - icon: github
-      text: Github
-      href: https://github.com/jonathanmbarnes
-    - icon: linkedin
-      text: Linkedin
-      href: https://www.linkedin.com/in/jonathanbarnes516
+  
+format:
+  html: 
+    grid:
+      sidebar-width: 0px
+      body-width: 900px
+      margin-width: 0px
+      gutter-width: 1.5rem
 ---
+:::{#headshot-intro}
+### Hello!
+
+I'm Jonathan. Welcome to this conglomerate of things I've worked on or participated in. This website is a work in progress that I'll slowly be able to add to as I prepare projects for displaying.
+
+In the time being please enjoy photos of my cat.
+
+### Academic Interests
+
+-   Teaching people programming and R skills
+-   Health Information Accessibility specifically in the realms of nutrition and childhood development.
+-   Data visualization, dashboards, and communication
+-   Computational methods in Data Science and Statistics
+
+### Hobbies
+
+-   Cooking, and sometimes baking
+-   Working out
+-   Cycling
+-   Laying on the floor
+
+:::
+
+:::{#Other}
+At the moment I'm currently pursuing my MPH in Public Health Data Science at the University of Minnesota's School of Public Health in the division of Biostatistics and Health Data Science. Prior to embarking on that adventure I finishing my undergrad at the University of St. Thomas completing in Data Analytics with minors in Biology and Applied Statistics. During my time I worked full-time for Information and Technology Services (ITS) completing numerous projects and initiatives I hope continue to be helpful for years to come.
+
+My primary goal in pursuing this degree is understand ways we can utilize statistical and data science methods to solve health problems or discover existing ones.
+:::
+

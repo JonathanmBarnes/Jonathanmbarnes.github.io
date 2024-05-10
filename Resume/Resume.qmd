@@ -1,8 +1,13 @@
 ---
 title: "Resume"
-format: 
+date: "5-10-2024"
+format:
   html: 
-    embed-resources: true
+    grid:
+      sidebar-width: 0px
+      body-width: 900px
+      margin-width: 0px
+      gutter-width: 1.5rem
 ---
 
-{{< html "Resume.html" >}}
+![](./Resume_JonathanBarnes.pdf){img.style.zoom="115%" fig-align="center" width="9in" height="11.5in"}

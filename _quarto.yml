@@ -7,23 +7,23 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: /Resume/Resume.qmd
+      - href: ./Resume/Resume.qmd
         text: Resume
-      - href: /Portfolio/PortfolioTest.qmd
+      - href: ./Portfolio/PortfolioTest.qmd
         text: Portfolio
     right:
-      - href: /Cat Photos
+      - href: ./Cat Photos/Cats.qmd
         text: Cat Photos
       - about.qmd
       
   page-footer:
       center:
         - icon: github
-        text: Github
-        href: https://github.com/jonathanmbarnes
+          text: Github
+          href: https://github.com/jonathanmbarnes
         - icon: linkedin
-        text: Linkedin
-        href: https://www.linkedin.com/in/jonathanbarnes516
+          text: Linkedin
+          href: https://www.linkedin.com/in/jonathanbarnes516
 
 format:
   html:
