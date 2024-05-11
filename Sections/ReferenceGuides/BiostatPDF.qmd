@@ -12,4 +12,4 @@ format:
       gutter-width: 1rem
 ---
 
-![](./referenceFiles/Biostat_ReferenceSheet_R.pdf){img.style.zoom="100%" fig-align="center" width="9.5in" height="7in"}
+![](./referenceFiles/Biostat_ReferenceSheet_R.pdf){img.style.zoom="100%" fig-align="center" width="11.5in" height="7in"}
