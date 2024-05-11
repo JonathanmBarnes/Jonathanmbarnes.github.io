@@ -18,10 +18,8 @@ website:
           - href: ./Sections/Cat Photos/Cats.qmd
             text: Shiny Applications
           - href: ./Sections/ReferenceGuides/References.qmd
-            text: References
+            text: Reference Documents
     right:
-      - href: index.qmd
-        text: Home
       - href: ./Sections/Cat Photos/Cats.qmd
         text: Cat Photos
       - icon: info
