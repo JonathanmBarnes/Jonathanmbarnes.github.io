@@ -9,7 +9,7 @@ format:
       sidebar-width: 0px
       body-width: 900px
       margin-width: 0px
-      gutter-width: 1.5rem
+      gutter-width: 1rem
 ---
 
 ![](./referenceFiles/Biostat_ReferenceSheet_R.pdf){img.style.zoom="100%" fig-align="center" width="9.5in" height="7in"}
