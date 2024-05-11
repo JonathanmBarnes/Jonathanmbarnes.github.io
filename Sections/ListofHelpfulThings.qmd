@@ -1,0 +1,15 @@
+---
+title: "Useful External Resources"
+author: "Jonathan Barnes"
+format:
+  html: 
+    grid:
+      sidebar-width: 0px
+      body-width: 1100px
+      margin-width: 0px
+      gutter-width: 1rem
+---
+
+This is (will be) a collection of various resources I think are helpful and free
+
+## To be filled

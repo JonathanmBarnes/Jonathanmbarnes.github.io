@@ -19,6 +19,8 @@ website:
             text: Shiny Applications
           - href: ./Sections/ReferenceGuides/References.qmd
             text: Reference Documents
+          - href: ./Sections/ListofHelpfulThings.qmd
+            text: Recomended Resources
     right:
       - href: ./Sections/Cat Photos/Cats.qmd
         text: Cat Photos
