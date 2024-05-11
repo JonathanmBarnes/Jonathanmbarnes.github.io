@@ -7,24 +7,28 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: ./Resume/Resume.qmd
+      - href: ./Sections/Resume/Resume.qmd
         text: Resume
-      - href: ./Portfolio/PortfolioTest.qmd
+      - href: ./Sections/Portfolio/Portfolio.qmd
         text: Portfolio
+      - href: ./Sections/Projects/CurrentProjects.qmd
+        text: Current Projects
       - text: Other Work
         menu: 
-          - href: ./Cat Photos/Cats.qmd
+          - href: ./Sections/Cat Photos/Cats.qmd
             text: Projects
-          - href: ./Cat Photos/Cats.qmd
-            text: Shiny
+          - href: ./Sections/Cat Photos/Cats.qmd
+            text: Shiny Applications
     right:
-      - href: ./Cat Photos/Cats.qmd
+      - href: ./Sections/Cat Photos/Cats.qmd
         text: Cat Photos
       - icon: info
         href: about.qmd
         text: " "
       
   page-footer:
+      border: true
+      background: light
       center:
         - icon: github
           text: Github
@@ -40,8 +44,8 @@ format:
       dark: superhero
     css: styles.css
     toc: true
-    mainfont: Aptos
-    monofont: Calibri
+    mainfont: Museo Sans
+    monofont: LG Display11_Light
     
 execute:
   freeze: auto

@@ -3,7 +3,7 @@ title: "Jonathan Barnes"
 about:
   id: headshot-intro
   template: trestles
-  image: Home/Headshot1.png
+  image: Sections/Home/Headshot1.png
   image-width: 350px
   image-shape: rounded
   
@@ -35,10 +35,10 @@ In the time being please enjoy photos of my cat.
 -   Working out
 -   Cycling
 -   Laying on the floor
-
 :::
 
-:::{#Other}
+:::{style="justify-content: center; text-align: center;"} 
+
 At the moment I'm currently pursuing my MPH in Public Health Data Science at the University of Minnesota's School of Public Health in the division of Biostatistics and Health Data Science. Prior to embarking on that adventure I finished my undergrad at the University of St. Thomas completing a BS in Data Analytics with minors in Biology and Applied Statistics. During my time I worked full-time for Information and Technology Services (ITS) completing numerous projects and initiatives I hope continue to be helpful for years to come.
 
 My primary goal in pursuing this degree is understand ways we can utilize statistical and data science methods to solve health problems or discover existing ones.

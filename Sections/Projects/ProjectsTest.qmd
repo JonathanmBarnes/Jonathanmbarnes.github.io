@@ -1,0 +1,9 @@
+---
+title: "Other Projects"
+listing:
+  contents: 
+    - "Other Projects/*.qmd"
+  sort: "date desc"
+  type: default
+  max-description-length: 1
+---

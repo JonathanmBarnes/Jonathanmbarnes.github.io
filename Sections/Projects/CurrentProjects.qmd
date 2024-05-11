@@ -1,0 +1,25 @@
+# Current Priorities
+
+Learning Python for Analytics to a similar level as R
+
+Preparing projects for upload/rendering for this website
+
+Shiny App that allows you to give your types of data which returns common options for analysis and visualization in R
+
+Shiny App for nutrition information based on body size; will give micro and macro nutrients
+
+### Smaller Projects
+
+Learning Swift, Docker
+
+Create a couple of plot options for regression assumptions
+
+Creating a general R package of things I commonly use and have to re-write
+
+### Topics being learned or Reviewed
+
+Review of College mathmatics and probability
+
+Statistical Learning
+
+Tree's and Machine learning methods in python

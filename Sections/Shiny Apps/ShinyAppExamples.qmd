@@ -1,0 +1,9 @@
+---
+title: "Created Shiny Apps"
+listing:
+  contents: 
+    - "ShinyApps/*.qmd"
+  sort: "date desc"
+  type: default
+  max-description-length: 1
+---

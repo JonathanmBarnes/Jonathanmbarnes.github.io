@@ -1,0 +1,13 @@
+---
+title: "Resume"
+date: "5-8-2024"
+format:
+  html: 
+    grid:
+      sidebar-width: 0px
+      body-width: 900px
+      margin-width: 0px
+      gutter-width: 1.5rem
+---
+
+![](./Resume_JonathanBarnes.pdf){img.style.zoom="115%" fig-align="center" width="9.5in" height="11.7in"}
