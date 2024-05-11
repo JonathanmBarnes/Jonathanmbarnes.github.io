@@ -1,0 +1,9 @@
+---
+title: "RefernceGuides"
+listing:
+  contents: 
+    - "BiostatPDF.qmd"
+  sort: "date desc"
+  type: table
+  max-description-length: 1
+---

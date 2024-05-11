@@ -1,6 +1,9 @@
 ---
 title: "Other Projects"
-
+listing:
+  contents: 
+    - "../Portfolio/PortProjects/*.qmd"
+  sort: "date desc"
+  type: default
+  max-description-length: 1
 ---
-
-## Empty at the moment
