@@ -5,5 +5,18 @@
       "/Sections/Portfolio/PortProjects/SPHereSurvey1.html",
       "/Sections/Portfolio/PortProjects/TDTPython.html"
     ]
+  },
+  {
+    "listing": "/Sections/Projects/ProjectsTest.html",
+    "items": [
+      "/Sections/Portfolio/PortProjects/SPHereSurvey1.html",
+      "/Sections/Portfolio/PortProjects/TDTPython.html"
+    ]
+  },
+  {
+    "listing": "/Sections/ReferenceGuides/References.html",
+    "items": [
+      "/Sections/ReferenceGuides/BiostatPDF.html"
+    ]
   }
 ]
