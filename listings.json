@@ -1,13 +1,13 @@
 [
   {
-    "listing": "/Sections/Portfolio/Portfolio.html",
+    "listing": "/Sections/Projects/ProjectsTest.html",
     "items": [
       "/Sections/Portfolio/PortProjects/SPHereSurvey1.html",
       "/Sections/Portfolio/PortProjects/TDTPython.html"
     ]
   },
   {
-    "listing": "/Sections/Projects/ProjectsTest.html",
+    "listing": "/Sections/Portfolio/Portfolio.html",
     "items": [
       "/Sections/Portfolio/PortProjects/SPHereSurvey1.html",
       "/Sections/Portfolio/PortProjects/TDTPython.html"
