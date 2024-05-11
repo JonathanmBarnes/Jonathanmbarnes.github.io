@@ -231,11 +231,11 @@ data_long <- Satisfaction %>%
   subset(Group != "Never")
 
 # Plot
-ggplot(data_long, aes(x = as.factor(row), y = Value, fill = Group)) +
+ggplot(data_long, aes(x = reorder(row, ifelse(Group == "Everybody", -Value, Value)), y = Value, fill = Group)) +
   geom_col(position = "dodge") +
   labs(x = "", y = "Satisfaction", title = "Plot of Satisfaction by Group") +
   theme_minimal() +
-  theme(legend.position = "top", axis.text.y = element_text(size = 12), legend.margin = margin(0,0,0,-250)) + scale_fill_manual(values = c("#5B0013", "#FFB71E", "#333333", "#777677", "#900021", "#FFDE7A")) + coord_flip()
+  theme(legend.position = "top", axis.text.y = element_text(size = 12, hjust = 0), legend.margin = margin(0,0,0,-250)) + scale_fill_manual(values = c("#5B0013", "#FFB71E", "#333333", "#777677", "#900021", "#FFDE7A")) +  coord_flip() + scale_y_reverse()
 ```
 
 ```{r, eval = FALSE}
@@ -256,11 +256,11 @@ data_long <- Priority %>%
   subset(Group != "Never")
 
 # Plot
-ggplot(data_long, aes(x = as.factor(row), y = Value, fill = Group)) +
+ggplot(data_long, aes(x = reorder(row, ifelse(Group == "Everybody", -Value, Value)), y = Value, fill = Group)) +
   geom_col(position = "dodge") +
   labs(x = "", y = "Priority Score", title = "Plot of Priority by Group") +
   theme_minimal() +
-  theme(legend.position = "top", axis.text.y = element_text(size = 12), legend.margin = margin(0,0,0,-200)) + scale_fill_manual(values = c("#5B0013", "#FFB71E", "#333333", "#777677", "#900021", "#FFDE7A")) + coord_flip()
+  theme(legend.position = "top", axis.text.y = element_text(size = 12), legend.margin = margin(0,0,0,-200)) + scale_fill_manual(values = c("#5B0013", "#FFB71E", "#333333", "#777677", "#900021", "#FFDE7A")) + coord_flip() + scale_y_reverse()
 ```
 
 # Weighting Methods and Data Processing

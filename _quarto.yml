@@ -44,8 +44,8 @@ format:
       dark: superhero
     css: styles.css
     toc: true
-    mainfont: Museo Sans
-    monofont: LG Display11_Light
+    mainfont: Aptos
+    monofont: Museo Sans
     
 execute:
   freeze: auto
