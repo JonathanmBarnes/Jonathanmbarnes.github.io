@@ -1,8 +1,6 @@
 ---
 title: "Other Projects"
-listing:
-  contents: 
-  sort: "date desc"
-  type: default
-  max-description-length: 1
+
 ---
+
+## Empty at the moment
