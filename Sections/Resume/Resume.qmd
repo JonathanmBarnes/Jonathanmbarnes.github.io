@@ -6,10 +6,6 @@ about:
   image: Headshot1.png
   image-width: 350px
   image-shape: rounded
-  links: 
-    - icon: save
-      text: Download
-      href: Sections/Resume/Resume_JonathanBarnes.pdf
 
 format:
   html: 
@@ -20,12 +16,7 @@ format:
       gutter-width: 1.5rem
 ---
 
-# About Me
 
 ::: text-center
-<img src="Headshot1.png" class="img-fluid rounded-circle mb-3" style="max-width: 350px;"/>
-:::
-
-::: text-center
-<a href="Resume_JonathanBarnes.pdf" download class="btn btn-primary"> <i class="bi bi-download"></i> Download Resume </a>
+<a href="Resume_JonathanBarnes.pdf" download class="btn btn-primary"> <i class="bi bi-save"></i> Download Resume </a>
 :::
