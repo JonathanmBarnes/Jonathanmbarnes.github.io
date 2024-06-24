@@ -1,16 +1,15 @@
 ---
 title: "Resume"
-date: "5-8-2024"
 
 about:
-  template: trestles
+  template: broadside
   image: Headshot1.png
   image-width: 350px
   image-shape: rounded
   links: 
     - icon: save
       text: Download
-      target: Resume_JonathanBarnes.pdf
+      target: Sections/Resume/Resume_JonathanBarnes.pdf
 
 format:
   html: 

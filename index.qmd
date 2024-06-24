@@ -2,7 +2,7 @@
 title: "Jonathan Barnes"
 about:
   id: headshot-intro
-  template: broadside
+  template: trestles
   image: Sections/Home/GradPhoto.jpg
   image-width: 380px
   image-shape: rounded
