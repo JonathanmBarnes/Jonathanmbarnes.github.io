@@ -3,7 +3,6 @@ about:
   id: Resume-Main
   template: broadside
   image: Headshot1.png
-  image-width: 350px
   image-shape: rounded
 
 format:

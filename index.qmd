@@ -10,7 +10,7 @@ format:
     page-layout: article
     grid:
       sidebar-width: 0px
-      body-width: 800px
+      body-width: 1200px
       margin-width: 0px
       gutter-width: 1.5rem
     max-width: 2000px

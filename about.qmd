@@ -16,9 +16,6 @@ toc: false
 # About Me
 :::
 
-::: column-sidebar
-![](Sections/Home/IMG_3591.PNG){fig-align="center" width="400"}
-:::
 
 ::: {style="justify-content: center; text-align: center;"}
 At the moment I'm currently pursuing my MPH in Public Health Data Science at the University of Minnesota's School of Public Health in the division of Biostatistics and Health Data Science. Prior to embarking on that adventure I finished my undergrad at the University of St. Thomas completing a BS in Data Analytics with minors in Biology and Applied Statistics. During my time I worked full-time for Information and Technology Services (ITS) completing numerous projects and initiatives I hope continue to be helpful for years to come.
@@ -42,6 +39,11 @@ My interest in health sciences began as a child centering around the intricacies
 -   Plants
 -   Laying on the floor
 :::
+
+::: column-sidebar
+![](Sections/Home/IMG_3591.PNG){width="400"}
+:::
+
 
 ::: column-page
 ![](Sections/Home/IMG_4371.jpeg)
