@@ -4,13 +4,13 @@ date: "5-8-2024"
 
 about:
   template: trestles
-  image: Sections/Resume/Headshot1.png
+  image: Headshot1.png
   image-width: 350px
   image-shape: rounded
   links: 
     - icon: save
-    - text: Download
-    - href: Resume_JonathanBarnes.pdf
+      text: Download
+      href: Resume_JonathanBarnes.pdf
 
 format:
   html: 
@@ -21,4 +21,3 @@ format:
       gutter-width: 1.5rem
 ---
 
-![](./Resume_JonathanBarnes.pdf){img.style.zoom="115%" fig-align="center" width="9.5in" height="11.7in"}
