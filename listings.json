@@ -1,9 +1,8 @@
 [
   {
-    "listing": "/Sections/Projects/ProjectsTest.html",
+    "listing": "/Sections/ReferenceGuides/References.html",
     "items": [
-      "/Sections/Portfolio/PortProjects/SPHereSurvey1.html",
-      "/Sections/Portfolio/PortProjects/TDTPython.html"
+      "/Sections/ReferenceGuides/BiostatPDF.html"
     ]
   },
   {
@@ -14,9 +13,10 @@
     ]
   },
   {
-    "listing": "/Sections/ReferenceGuides/References.html",
+    "listing": "/Sections/Projects/ProjectsTest.html",
     "items": [
-      "/Sections/ReferenceGuides/BiostatPDF.html"
+      "/Sections/Portfolio/PortProjects/SPHereSurvey1.html",
+      "/Sections/Portfolio/PortProjects/TDTPython.html"
     ]
   }
 ]
