@@ -2,6 +2,7 @@
 title: "Resume"
 
 about:
+  id: Resume-Main
   template: broadside
   image: Headshot1.png
   image-width: 350px
@@ -16,7 +17,14 @@ format:
       gutter-width: 1.5rem
 ---
 
+::: {#Resume-Main}
+Hold Text
+
+:::
+
+
 
 ::: text-center
 <a href="Resume_JonathanBarnes.pdf" download class="btn btn-primary"> <i class="bi bi-save"></i> Download Resume </a>
 :::
+
