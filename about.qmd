@@ -1,7 +1,6 @@
 ---
 format:
   html:
-    page-layout: article
     grid:
       sidebar-width: 400px
       margin-width: 300px

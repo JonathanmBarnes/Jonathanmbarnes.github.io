@@ -7,13 +7,12 @@ about:
 
 format:
   html:
-    page-layout: article
     grid:
       sidebar-width: 0px
       body-width: 1200px
       margin-width: 0px
       gutter-width: 1.5rem
-    max-width: 2000px
+    max-width: 1800px
 
 toc: false
 

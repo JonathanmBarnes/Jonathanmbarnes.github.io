@@ -7,7 +7,6 @@ about:
 
 format:
   html:
-    page-layout: article
     grid:
       sidebar-width: 0px
       body-width: 1200px
