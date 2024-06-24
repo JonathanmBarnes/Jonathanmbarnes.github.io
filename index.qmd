@@ -1,39 +1,17 @@
 ---
-title: "Jonathan Barnes"
 about:
-  id: headshot-intro
   template: trestles
   image: Sections/Home/GradPhoto.jpg
-  image-width: 300px
-  image-shape: rounded
-  
----
+  image-shape: rectangle
+  image-width: 450px
 
-::: {#headshot-intro}
-### Hello!
+toc: false
+
+---
+## Hello!
 
 I'm Jonathan. Welcome to this conglomerate of things I've worked on or participated in. This website is a work in progress that I'll slowly be able to add to as I prepare projects for displaying. There are currently some items in the portfolio but more can be found on my github page.
 
 In the time being please enjoy photos of my cat.
 
-### Academic Interests
 
--   Health Information Accessibility specifically in the realms of nutrition and childhood development.
--   Data visualization, dashboards, and communication
--   Computational methods in Data Science and Statistics
--   Teaching people programming and R skills
-
-### Hobbies
-
--   Cooking, and sometimes baking
--   Working out
--   Cycling
--   Plants
--   Laying on the floor
-:::
-
-::: {style="justify-content: center; text-align: center;"}
-At the moment I'm currently pursuing my MPH in Public Health Data Science at the University of Minnesota's School of Public Health in the division of Biostatistics and Health Data Science. Prior to embarking on that adventure I finished my undergrad at the University of St. Thomas completing a BS in Data Analytics with minors in Biology and Applied Statistics. During my time I worked full-time for Information and Technology Services (ITS) completing numerous projects and initiatives I hope continue to be helpful for years to come.
-
-My interest in health sciences began as a child centering around the intricacies of the human body and how it works. While in high school I was part of the biomedical sciences at Coon Rapids for four years; additionally I was the first student to participate in the biomedical and engineering programs. My primary goal in pursuing this degree is understand ways we can utilize statistical and data science methods to solve health problems or discover existing ones.
-:::

@@ -2,7 +2,9 @@ project:
   type: website
 
 website:
+  search: false
   title: "Jonathan Barnes"
+  
   navbar:
     left:
       - href: ./Sections/Resume/Resume.qmd
@@ -22,11 +24,10 @@ website:
           - href: ./Sections/ListofHelpfulThings.qmd
             text: Recomended Resources
     right:
-      - href: ./Sections/Cat Photos/Cats.qmd
-        text: Cat Photos
       - icon: info
         href: about.qmd
-        text: " "
+        text: About Me
+    search: false
       
   page-footer:
       border: true
@@ -36,16 +37,22 @@ website:
           href: https://github.com/jonathanmbarnes
         - icon: linkedin
           href: https://www.linkedin.com/in/jonathanbarnes516
+          
+      right:
+        - href: ./Sections/Cat Photos/Cats.qmd
+          text: Cat Photos
 
 format:
   html:
     theme: 
       light: sandstone
       dark: superhero
-    css: styles.css
-    toc: true
     mainfont: Aptos
     monofont: Museo Sans
+    css: styles.css
+    toc: true
+    max-width: 1700px
+    page-layout: full
     
 execute:
   freeze: auto
