@@ -1,7 +1,7 @@
 ---
 about:
   id: Resume-Main
-  template: trestles
+  template: broadside
   image: Headshot1.png
   image-width: 350px
   image-shape: rounded
@@ -11,7 +11,7 @@ format:
     page-layout: article
     grid:
       sidebar-width: 0px
-      body-width: 900px
+      body-width: 1200px
       margin-width: 0px
       gutter-width: 1.5rem
     max-width: 2000px

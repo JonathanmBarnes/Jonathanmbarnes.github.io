@@ -5,6 +5,16 @@ about:
   image-shape: rectangle
   image-width: 450px
 
+format:
+  html:
+    page-layout: article
+    grid:
+      sidebar-width: 0px
+      body-width: 800px
+      margin-width: 0px
+      gutter-width: 1.5rem
+    max-width: 2000px
+
 toc: false
 
 ---

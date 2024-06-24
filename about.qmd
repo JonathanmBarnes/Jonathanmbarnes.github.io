@@ -3,11 +3,11 @@ format:
   html:
     page-layout: article
     grid:
-      sidebar-width: 800px
+      sidebar-width: 400px
       margin-width: 300px
       body-width: 450px
       gutter-width: 1.5rem
-    max-width: 1800px
+    max-width: 2000px
       
 toc: false
 ---
