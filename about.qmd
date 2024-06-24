@@ -22,6 +22,10 @@ At the moment I'm currently pursuing my MPH in Public Health Data Science at the
 My interest in health sciences began as a child centering around the intricacies of the human body and how it works. While in high school I was part of the biomedical sciences at Coon Rapids for four years; additionally I was the first student to participate in the biomedical and engineering programs. My primary goal in pursuing this degree is understand ways we can utilize statistical and data science methods to solve health problems or discover existing ones.
 :::
 
+::: column-sidebar
+![](Sections/Home/IMG_3591.PNG)
+:::
+
 ::: column-margin
 ### Academic Interests
 
@@ -37,10 +41,6 @@ My interest in health sciences began as a child centering around the intricacies
 -   Cycling
 -   Plants
 -   Laying on the floor
-:::
-
-::: column-sidebar
-![](Sections/Home/IMG_3591.PNG){width="400"}
 :::
 
 

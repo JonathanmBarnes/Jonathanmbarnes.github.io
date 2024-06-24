@@ -8,11 +8,11 @@ about:
 format:
   html:
     grid:
-      sidebar-width: 0px
+      sidebar-width: 10px
       body-width: 1200px
-      margin-width: 0px
+      margin-width: 10px
       gutter-width: 1.5rem
-    max-width: 2000px
+    max-width: 1800px
 ---
 
 ::: {#Resume-Main}
@@ -33,7 +33,7 @@ format:
 ### IT
 :::
 
-::: {style="justify-content: center; text-align: center;"}
+::: column-page {style="justify-content: center; text-align: center;"}
 +--------------------------+------------------------+----------------------------+
 |                          | **Proficiencies**      |                            |
 +:========================:+:======================:+:==========================:+
