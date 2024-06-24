@@ -4,7 +4,7 @@ about:
   id: headshot-intro
   template: trestles
   image: Sections/Home/GradPhoto.jpg
-  image-width: 380px
+  image-width: 400px
   image-shape: rounded
   
 ---

@@ -9,7 +9,7 @@ about:
   links: 
     - icon: save
       text: Download
-      target: Sections/Resume/Resume_JonathanBarnes.pdf
+      href: Sections/Resume/Resume_JonathanBarnes.pdf
 
 format:
   html: 
