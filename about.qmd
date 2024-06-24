@@ -7,7 +7,7 @@ format:
       margin-width: 300px
       body-width: 450px
       gutter-width: 1.5rem
-    max-width: 2000px
+    max-width: 1800px
       
 toc: false
 ---

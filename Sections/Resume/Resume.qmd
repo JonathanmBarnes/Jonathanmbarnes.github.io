@@ -1,7 +1,7 @@
 ---
 about:
   id: Resume-Main
-  template: broadside
+  template: trestles
   image: Headshot1.png
   image-width: 350px
   image-shape: rounded
