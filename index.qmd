@@ -4,16 +4,9 @@ about:
   id: headshot-intro
   template: broadside
   image: Sections/Home/GradPhoto.jpg
-  image-width: 400px
+  image-width: 380px
   image-shape: rounded
   
-format:
-  html: 
-    grid:
-      sidebar-width: 0px
-      body-width: 900px
-      margin-width: 0px
-      gutter-width: 1.5rem
 ---
 
 ::: {#headshot-intro}

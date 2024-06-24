@@ -10,7 +10,7 @@ about:
   links: 
     - icon: save
       text: Download
-      href: Resume_JonathanBarnes.pdf
+      target: Resume_JonathanBarnes.pdf
 
 format:
   html: 
