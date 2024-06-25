@@ -3,7 +3,6 @@ about:
   id: Resume-Main
   template: broadside
   image: Headshot1.png
-  image-shape: rounded
 
 format:
   html:
@@ -15,6 +14,7 @@ format:
     max-width: 1200px
 ---
 
+::: {#Resume-Main}
 +:------------------:+:--------------------------:+:------------------:+
 |                    | ## Jonathan Barnes         |                    |
 +--------------------+----------------------------+--------------------+
@@ -30,8 +30,9 @@ format:
 ### Graduate Research Assistant
 
 ### IT
+:::
 
-::: column-page
+::: {.column-page}
 +--------------------------+------------------------+----------------------------+
 |                          | **Proficiencies**      |                            |
 +:========================:+:======================:+:==========================:+

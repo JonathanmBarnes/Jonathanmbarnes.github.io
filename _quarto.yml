@@ -51,7 +51,7 @@ format:
     monofont: Museo Sans
     css: styles.css
     toc: true
-    max-width: 1700px
+    max-width: 1800px
     page-layout: full
     
 execute:
