@@ -1,49 +1,46 @@
 ---
+title: About Me
+about:
+  template: jolla
+  image-shape: rectangle
+  image: Sections/Home/IMG_4371.jpeg
+  image-width: 1000px
 format:
   html:
     grid:
-      sidebar-width: 400px
-      margin-width: 300px
-      body-width: 450px
+      sidebar-width: 0px
+      margin-width: 0px
+      body-width: 800px
       gutter-width: 1.5rem
-    max-width: 2000px
+    max-width: 1600px
       
 toc: false
 ---
 
-::: {style="justify-content: center; text-align: center;"}
-# About Me
-:::
-
-
-::: {style="justify-content: center; text-align: center;"}
+::: column-body
 At the moment I'm currently pursuing my MPH in Public Health Data Science at the University of Minnesota's School of Public Health in the division of Biostatistics and Health Data Science. Prior to embarking on that adventure I finished my undergrad at the University of St. Thomas completing a BS in Data Analytics with minors in Biology and Applied Statistics. During my time I worked full-time for Information and Technology Services (ITS) completing numerous projects and initiatives I hope continue to be helpful for years to come.
 
 My interest in health sciences began as a child centering around the intricacies of the human body and how it works. While in high school I was part of the biomedical sciences at Coon Rapids for four years; additionally I was the first student to participate in the biomedical and engineering programs. My primary goal in pursuing this degree is understand ways we can utilize statistical and data science methods to solve health problems or discover existing ones.
-:::
 
-::: column-sidebar
-![](Sections/Home/IMG_3591.PNG)
-:::
-
-::: column-margin
 ### Academic Interests
 
--   Health Information Accessibility specifically in the realms of nutrition and childhood development.
--   Data visualization, dashboards, and communication
--   Computational methods in Data Science and Statistics
--   Teaching people programming and R skills
+Health Information Accessibility specifically in the realms of nutrition and childhood development.
+
+Data visualization, dashboards, and communication
+
+Computational methods in Data Science and Statistics
+
+Teaching people programming and R skills
 
 ### Hobbies
 
--   Cooking, and sometimes baking
--   Working out
--   Cycling
--   Plants
--   Laying on the floor
-:::
+Cooking, and sometimes baking
 
+Working out
 
-::: column-page
-![](Sections/Home/IMG_4371.jpeg)
+Cycling
+
+Plants
+
+Laying on the floor
 :::

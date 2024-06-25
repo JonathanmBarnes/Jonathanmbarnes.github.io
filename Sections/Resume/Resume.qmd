@@ -8,23 +8,23 @@ about:
 format:
   html:
     grid:
-      sidebar-width: 10px
+      sidebar-width: 0px
       body-width: 1200px
-      margin-width: 10px
+      margin-width: 0px
       gutter-width: 1.5rem
-    max-width: 1800px
+    max-width: 1200px
 ---
 
 ::: {#Resume-Main}
-+:------------------:+:-----------------------------:+:------------------:+
-|                    | ## Jonathan Barnes            |                    |
-+--------------------+-------------------------------+--------------------+
-|                    | **Expertise**                 |                    |
-+--------------------+-------------------------------+--------------------+
-| Data Visualization | R                             | Data Pipelines     |
-+--------------------+-------------------------------+--------------------+
-| Data Cleaning      | Programming                   | Data Communication |
-+--------------------+-------------------------------+--------------------+
++:------------------:+:---------------------------:+:------------------:+
+|                    | ## Jonathan Barnes          |                    |
++--------------------+-----------------------------+--------------------+
+|                    | **Expertise**               |                    |
++--------------------+-----------------------------+--------------------+
+| Data Visualization | R                           | Data Pipelines     |
++--------------------+-----------------------------+--------------------+
+| Data Cleaning      | Programming                 | Data Communication |
++--------------------+-----------------------------+--------------------+
 
 ## Relevent Work Experience
 
@@ -33,7 +33,7 @@ format:
 ### IT
 :::
 
-::: column-page {style="justify-content: center; text-align: center;"}
+::: column-page
 +--------------------------+------------------------+----------------------------+
 |                          | **Proficiencies**      |                            |
 +:========================:+:======================:+:==========================:+
@@ -64,5 +64,5 @@ format:
 | Creativity | Critical Thinking | Complex Problem-solving | Pattern Recognition | Integrity  |
 +------------+-------------------+-------------------------+---------------------+------------+
 
-<a href="Resume_JonathanBarnes.pdf" download class="btn btn-secondary"> <i class="bi bi-save"></i> Download Resume </a>
+<a href="Resume_JonathanBarnes.pdf" download class="btn btn-primary"> <i class="bi bi-save"></i> Download Resume </a>
 :::
