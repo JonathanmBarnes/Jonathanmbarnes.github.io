@@ -1,14 +1,15 @@
 ---
 about:
   id: Resume-Main
-  template: broadside
+  template: trestles
   image: Headshot1.png
+  image-width: 400px
 
 format:
   html:
     grid:
       sidebar-width: 0px
-      body-width: 1200px
+      body-width: 900px
       margin-width: 0px
       gutter-width: 1.5rem
     max-width: 1200px
