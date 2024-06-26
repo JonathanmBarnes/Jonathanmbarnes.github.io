@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Jonathan Barnes - RefernceGuides</title>
+<title>Jonathan Barnes - Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,9 +64,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -134,11 +134,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../Sections/Resume/Resume.html"> 
+    <a class="nav-link" href="../../Sections/Resume/index.html"> 
 <span class="menu-text">Resume</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../Sections/Portfolio/Portfolio.html"> 
+    <a class="nav-link active" href="../../Sections/Portfolio/index.html" aria-current="page"> 
 <span class="menu-text">Portfolio</span></a>
   </li>  
   <li class="nav-item">
@@ -159,7 +159,7 @@ window.Quarto = {
  <span class="dropdown-text">Shiny Applications</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../Sections/ReferenceGuides/References.html">
+    <a class="dropdown-item" href="../../Sections/ReferenceGuides/index.html">
  <span class="dropdown-text">Reference Documents</span></a>
   </li>  
         <li>
@@ -171,7 +171,7 @@ window.Quarto = {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../about.html"> <i class="bi bi-info" role="img">
+    <a class="nav-link" href="../../Sections/About/index.html"> <i class="bi bi-info" role="img">
 </i> 
 <span class="menu-text">About Me</span></a>
   </li>  
@@ -195,7 +195,7 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">RefernceGuides</h1>
+<h1 class="title">Portfolio</h1>
 </div>
 
 
@@ -216,60 +216,65 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<div class="listing-actions-group">
-   <div class="input-group input-group-sm quarto-listing-sort">
-     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
-       <option value="" disabled="" selected="" hidden="">Order By</option>
-       <option value="index" data-direction="asc">Default</option>
-         <option value="listing-date-sort" data-direction="asc">
-          Date - Oldest
-        </option>
-         <option value="listing-date-sort" data-direction="desc">
-          Date - Newest
-        </option>
-         <option value="listing-title-sort" data-direction="asc">
-          Title
-        </option>
-         <option value="listing-author" data-direction="asc">
-          Author
-        </option>
-     </select>
-  </div>
-    <div class="input-group input-group-sm quarto-listing-filter">
-      <span class="input-group-text"><i class="bi bi-search"></i></span>
-      <input type="text" class="search form-control" placeholder="Filter">
-    </div>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1713916800000" data-listing-file-modified-sort="1719418486167" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1237">
+<div class="thumbnail">
+<p><a href="../../Sections/Portfolio/PortProjects/SPHereSurvey1.html" class="no-external"></a></p><a href="../../Sections/Portfolio/PortProjects/SPHereSurvey1.html" class="no-external">
+<p><img src="../../Sections/Portfolio/PortProjects/PhotoDepPort/WordPlot2.png" class="thumbnail-image"></p>
+</a><p><a href="../../Sections/Portfolio/PortProjects/SPHereSurvey1.html" class="no-external"></a></p>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
-<th>
-<a class="sort" data-sort="listing-author" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Author</a>
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-listing-date-sort="1714780800000" data-listing-file-modified-sort="1719417391701" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="4" data-listing-title-sort="Biostat Reference Sheet" data-listing-filename-sort="BiostatPDF.qmd">
-<td>
-<span class="listing-date">May 4, 2024</span>
-</td>
-<td>
-<a href="../../Sections/ReferenceGuides/BiostatPDF.html" class="title listing-title">Biostat Reference Sheet</a>
-</td>
-<td>
-<span class="listing-author">Jonathan Barnes</span>
-</td>
-</tr>
-</tbody>
-</table>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../Sections/Portfolio/PortProjects/SPHereSurvey1.html" class="no-external">SPHere Survey Results</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../../Sections/Portfolio/PortProjects/SPHereSurvey1.html" class="no-external">Results of the 2024 SPHere survey summarising what students would like to see improved and what should be prioritized</a>
+</div>
+<div class="listing-description">
+<a href="../../Sections/Portfolio/PortProjects/SPHereSurvey1.html" class="no-external">…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../../Sections/Portfolio/PortProjects/SPHereSurvey1.html" class="no-external">
+<div class="listing-date">
+Apr 24, 2024
+</div>
+<div class="listing-author">
+Jonathan Barnes, Maya Koffski, Caylin Crawford
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1681776000000" data-listing-file-modified-sort="1719418486167" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="11" data-listing-word-count-sort="2136">
+<div class="thumbnail">
+<p><a href="../../Sections/Portfolio/PortProjects/TDTPython.html" class="no-external"></a></p><a href="../../Sections/Portfolio/PortProjects/TDTPython.html" class="no-external">
+<p><img src="../../Sections/Portfolio/PortProjects/PhotoDepPort/TDTHome.png" class="thumbnail-image"></p>
+</a><p><a href="../../Sections/Portfolio/PortProjects/TDTPython.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../Sections/Portfolio/PortProjects/TDTPython.html" class="no-external">Tech Desk Tools</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../../Sections/Portfolio/PortProjects/TDTPython.html" class="no-external">Overview of python application I created to aid productivity and reduce learning curve to working at the Tech Desk at the University of St.&nbsp;Thomas</a>
+</div>
+<div class="listing-description">
+<a href="../../Sections/Portfolio/PortProjects/TDTPython.html" class="no-external">…</a>
+</div>
+</div>
+<div class="metadata">
+<a href="../../Sections/Portfolio/PortProjects/TDTPython.html" class="no-external">
+<div class="listing-date">
+Apr 18, 2023
+</div>
+<div class="listing-author">
+Jonathan Barnes
+</div>
+</a>
+</div>
+</div>
+</div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>

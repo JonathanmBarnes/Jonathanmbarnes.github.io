@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/about.html</loc>
-    <lastmod>2024-06-26T15:56:31.773Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Projects/CurrentProjects.html</loc>
-    <lastmod>2024-06-26T15:56:31.701Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/ReferenceGuides/References.html</loc>
-    <lastmod>2024-06-26T15:56:31.701Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Shiny Apps/ShinyAppExamples.html</loc>
-    <lastmod>2024-06-26T15:56:31.725Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/ListofHelpfulThings.html</loc>
-    <lastmod>2024-06-26T15:56:31.697Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Portfolio/Portfolio.html</loc>
-    <lastmod>2024-06-26T15:56:31.701Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Portfolio/PortProjects/TDTPython.html</loc>
-    <lastmod>2024-06-26T15:56:31.701Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Portfolio/PortProjects/SPHereSurvey1.html</loc>
-    <lastmod>2024-06-26T15:56:31.701Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Cat Photos/Cats.html</loc>
-    <lastmod>2024-06-26T15:56:31.493Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Resume/Resume.html</loc>
-    <lastmod>2024-06-26T15:56:31.725Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/ReferenceGuides/BiostatPDF.html</loc>
-    <lastmod>2024-06-26T15:56:31.701Z</lastmod>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/index.html</loc>
+    <lastmod>2024-06-26T16:14:46.243Z</lastmod>
   </url>
   <url>
     <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Projects/ProjectsTest.html</loc>
-    <lastmod>2024-06-26T15:56:31.701Z</lastmod>
+    <lastmod>2024-06-26T16:14:46.167Z</lastmod>
   </url>
   <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/index.html</loc>
-    <lastmod>2024-06-26T15:56:31.773Z</lastmod>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/ReferenceGuides/index.html</loc>
+    <lastmod>2024-06-26T16:14:46.167Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Resume/index.html</loc>
+    <lastmod>2024-06-26T16:14:46.191Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/ListofHelpfulThings.html</loc>
+    <lastmod>2024-06-26T16:14:46.163Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Portfolio/index.html</loc>
+    <lastmod>2024-06-26T16:14:46.167Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Portfolio/PortProjects/TDTPython.html</loc>
+    <lastmod>2024-06-26T16:14:46.167Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/About/index.html</loc>
+    <lastmod>2024-06-26T16:14:45.959Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Portfolio/PortProjects/SPHereSurvey1.html</loc>
+    <lastmod>2024-06-26T16:14:46.167Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Cat Photos/Cats.html</loc>
+    <lastmod>2024-06-26T16:14:45.959Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Resume/Resume.html</loc>
+    <lastmod>2024-06-26T16:14:46.191Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Shiny Apps/ShinyAppExamples.html</loc>
+    <lastmod>2024-06-26T16:14:46.191Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/ReferenceGuides/BiostatRef/index.html</loc>
+    <lastmod>2024-06-26T16:14:46.167Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Projects/CurrentProjects.html</loc>
+    <lastmod>2024-06-26T16:14:46.167Z</lastmod>
   </url>
 </urlset>
