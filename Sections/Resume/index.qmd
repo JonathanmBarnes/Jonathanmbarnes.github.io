@@ -16,29 +16,11 @@ format:
 ---
 
 ::: {#Resume-Main}
-**University of Minnesota Medical School, Minneapolis, MN**\
-**Graduate Research Assistant \| Advanced Research and Diagnostic Laboratory (Oct. 2023 -- May 2024)**\
-As a Graduate Research Assistant at the Advanced Research and Diagnostic Laboratory, I was responsible for a project exploring biomarkers in the HRS study. My work involved performing comprehensive analyses for biomarkers related to Dementia and Alzheimer's. I developed group classifications based on plasma biomarkers elevation and conducted differential gene expression analysis using these biomarker groups, recording cognitive decline. I created models examining cognitive scores and output from OLINK and Quanterix machines, and explored the validation of a previously published aging clock based on ARIC study data with HRS data.
-
-**University of St. Thomas, St. Paul and Minneapolis, MN**\
-**ITS Support Services Intern & Service Desk Technician (June 2022 -- Aug. 2023)**\
-During my time as an ITS Support Services Intern & Service Desk Technician, I received the ITS Outstanding Student Award. I developed and maintained a Python application crucial to organizational operations, and established and updated digital signage across service desks and various sites. I mentored junior students, fostering their skill enhancement and professional growth. I oversaw departmental ticketing, resolving over 4500 tickets over two years, and authored key technical documentation and procedural guides for The Tech Desk, ITS staff, students, and faculty. I led multiple efficiency enhancement projects, streamlining processes and operational workflows, and served as an essential operational cornerstone, diligently addressing potential vulnerabilities.
-
-**ITS Rollout Intern (May 2022 -- Sept. 2022)**\
-As the ITS Rollout Intern, I assumed the role of sole successor to a formerly ten-member team. I managed the setup of over 1500 computers, which was 2.5 times the standard per year. I assisted with inventory maintenance and upkeep following replacement and setup.
-
-**ITS Service Desk Senior Student Technician (Aug. 2021 -- Jun. 2022)**\
-In my role as the ITS Service Desk Senior Student Technician, I functioned as the initial contact for student workers at phone centers and walk-up desks. I wrote procedural documentation adhered to by students and staff within ITS.
-:::
-
-|                    |               |                    |
-|:------------------:|:-------------:|:------------------:|
-|                    | **Expertise** |                    |
-| Data Visualization |       R       |   Data Pipelines   |
-|   Data Cleaning    |  Programming  | Data Communication |
-
+|                          |     **Expertise**      |                            |
+|:------------------------:|:----------------------:|:--------------------------:|
+|    Data Visualization    |           R            |       Data Pipelines       |
+|      Data Cleaning       |      Programming       |     Data Communication     |
 |                          |   **Proficiencies**    |                            |
-|:----------------------:|:--------------------:|:------------------------:|
 |    Applied Statistics    |     Data Analysis      |         Databases          |
 | Geospatial Visualization |    Data Engineering    |    Predictive Modeling     |
 |     Machine Learning     | Computational Biology  | Differential Gene Analysis |
@@ -50,8 +32,25 @@ In my role as the ITS Service Desk Senior Student Technician, I functioned as th
 |           Git            |         Linux          |            Bash            |
 |          Office          |       PowerShell       |            SQL             |
 
-|            |                   |      **Strengths**      |                     |           |
-|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
-| Creativity | Critical Thinking | Complex Problem-solving | Pattern Recognition | Integrity |
+|            |                   |  **Strengths**  |                     |           |
+|:----------:|:-----------------:|:---------------:|:-------------------:|:---------:|
+| Creativity | Critical Thinking | Problem solving | Pattern Recognition | Integrity |
+:::
+
+# Jonathan Barnes
+
+**University of Minnesota Medical School, Minneapolis, MN**\
+**Graduate Research Assistant \| Advanced Research and Diagnostic Laboratory (Oct. 2023 -- May 2024)**\
+As a Graduate Research Assistant at the Advanced Research and Diagnostic Laboratory, I was responsible for a project exploring biomarkers in the HRS study. My work involved performing comprehensive analyses for biomarkers related to Dementia and Alzheimer's. I developed group classifications based on plasma biomarkers elevation and conducted differential gene expression analysis using these biomarker groups, recording cognitive decline. I created models examining cognitive scores and output from OLINK and Quanterix machines, and explored the validation of a previously published aging clock based on ARIC study data with HRS data.
+
+**University of St. Thomas, St. Paul and Minneapolis, MN**\
+**ITS Support Services Intern & Service Desk Technician (June 2022 -- Aug. 2023)**\
+During my time as an ITS Support Services Intern & Service Desk Technician, I received the ITS Outstanding Student Award. I developed and maintained a Python application crucial to organizational operations, and established and updated digital signage across service desks and various sites. I mentored junior students, fostering their skill enhancement and professional growth. I oversaw departmental ticketing, resolving over 4500 tickets over two years, and authored key technical documentation and procedural guides for The Tech Desk, ITS staff, students, and faculty. I led multiple efficiency enhancement projects, streamlining processes and operational workflows, and served as an essential operational cornerstone, diligently addressing potential vulnerabilities.
+
+**ITS Rollout Intern (May 2022 -- Sept. 2022)**\
+As the sole successor to a ten-member team, I managed the setup of over 1500 computers and assisted with inventory maintenance and upkeep following replacement and setup.
+
+**ITS Service Desk Senior Student Technician (Aug. 2021 -- June 2022)**\
+In my role as the ITS Service Desk Senior Student Technician, I functioned as the initial contact for student workers at phone centers and walk-up desks. I wrote procedural documentation adhered to by students and staff within ITS.
 
 <a href="Resume_JonathanBarnes.pdf" download class="btn btn-primary"> <i class="bi bi-save"></i> Download Resume </a>
