@@ -1,7 +1,7 @@
 ---
 about:
   id: Resume-Main
-  template: trestles
+  template: broadside
   image: Headshot1.png
   image-width: 400px
 
@@ -33,7 +33,6 @@ format:
 ### IT
 :::
 
-::: {.column-page}
 +--------------------------+------------------------+----------------------------+
 |                          | **Proficiencies**      |                            |
 +:========================:+:======================:+:==========================:+
@@ -65,4 +64,4 @@ format:
 +------------+-------------------+-------------------------+---------------------+------------+
 
 <a href="Resume_JonathanBarnes.pdf" download class="btn btn-primary"> <i class="bi bi-save"></i> Download Resume </a>
-:::
+
