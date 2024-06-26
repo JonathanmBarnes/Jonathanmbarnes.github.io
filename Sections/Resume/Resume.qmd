@@ -9,59 +9,47 @@ format:
   html:
     grid:
       sidebar-width: 0px
-      body-width: 900px
+      body-width: 1200px
       margin-width: 0px
       gutter-width: 1.5rem
-    max-width: 1200px
+    max-width: 1600px
 ---
 
 ::: {#Resume-Main}
-+:------------------:+:--------------------------:+:------------------:+
-|                    | ## Jonathan Barnes         |                    |
-+--------------------+----------------------------+--------------------+
-|                    | **Expertise**              |                    |
-+--------------------+----------------------------+--------------------+
-| Data Visualization | R                          | Data Pipelines     |
-+--------------------+----------------------------+--------------------+
-| Data Cleaning      | Programming                | Data Communication |
-+--------------------+----------------------------+--------------------+
++:------------------:+:------------------:+:------------------:+
+|                    | ## Jonathan Barnes |                    |
++--------------------+--------------------+--------------------+
+|                    | **Expertise**      |                    |
++--------------------+--------------------+--------------------+
+| Data Visualization | R                  | Data Pipelines     |
++--------------------+--------------------+--------------------+
+| Data Cleaning      | Programming        | Data Communication |
++--------------------+--------------------+--------------------+
 
 ## Relevent Work Experience
 
 ### Graduate Research Assistant
 
 ### IT
+
+Testing Text
 :::
 
-+--------------------------+------------------------+----------------------------+
-|                          | **Proficiencies**      |                            |
-+:========================:+:======================:+:==========================:+
-| Applied Statistics       | Data Analysis          | Databases                  |
-+--------------------------+------------------------+----------------------------+
-| Geospatial Visualization | Data Engineering       | Predictive Modeling        |
-+--------------------------+------------------------+----------------------------+
-| Machine Learning         | Computational Biology  | Differential Gene Analysis |
-+--------------------------+------------------------+----------------------------+
-| Regression Analysis      | Research Methodologies | Data Privacy               |
-+--------------------------+------------------------+----------------------------+
-| Project Management       | GIS                    | Technical Writing          |
-+--------------------------+------------------------+----------------------------+
+|                          |   **Proficiencies**    |                            |
+|:------------------------:|:----------------------:|:--------------------------:|
+|    Applied Statistics    |     Data Analysis      |         Databases          |
+| Geospatial Visualization |    Data Engineering    |    Predictive Modeling     |
+|     Machine Learning     | Computational Biology  | Differential Gene Analysis |
+|   Regression Analysis    | Research Methodologies |        Data Privacy        |
+|    Project Management    |          GIS           |     Technical Writing      |
 |                          | **Languages & Tools**  |                            |
-+--------------------------+------------------------+----------------------------+
-| R                        | Python                 | Shiny                      |
-+--------------------------+------------------------+----------------------------+
-| Quarto                   | Markdown               | API's                      |
-+--------------------------+------------------------+----------------------------+
-| Git                      | Linux                  | Bash                       |
-+--------------------------+------------------------+----------------------------+
-| Office                   | PowerShell             | SQL                        |
-+--------------------------+------------------------+----------------------------+
+|            R             |         Python         |           Shiny            |
+|          Quarto          |        Markdown        |           API's            |
+|           Git            |         Linux          |            Bash            |
+|          Office          |       PowerShell       |            SQL             |
 
-+------------+-------------------+-------------------------+---------------------+------------+
-|            |                   | **Strengths**           |                     |            |
-+:==========:+:=================:+:=======================:+:===================:+:==========:+
-| Creativity | Critical Thinking | Complex Problem-solving | Pattern Recognition | Integrity  |
-+------------+-------------------+-------------------------+---------------------+------------+
+|            |                   |      **Strengths**      |                     |           |
+|:----------:|:-----------------:|:-----------------------:|:-------------------:|:---------:|
+| Creativity | Critical Thinking | Complex Problem-solving | Pattern Recognition | Integrity |
 
 <a href="Resume_JonathanBarnes.pdf" download class="btn btn-primary"> <i class="bi bi-save"></i> Download Resume </a>
-
