@@ -3,7 +3,7 @@ about:
   id: Resume-Main
   template: broadside
   image: Headshot1.png
-  image-width: 400px
+  image-width: 600px
 
 format:
   html:
