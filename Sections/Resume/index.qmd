@@ -14,10 +14,11 @@ format:
       gutter-width: 1.5rem
     max-width: 1600px
 ---
+# Jonathan Barnes
 
 ::: {#Resume-Main}
 |                          |     **Expertise**      |                            |
-|:------------------------:|:----------------------:|:--------------------------:|
+|:------------------------:|:------------------:|:------------------------:|
 |    Data Visualization    |           R            |       Data Pipelines       |
 |      Data Cleaning       |      Programming       |     Data Communication     |
 |                          |   **Proficiencies**    |                            |
@@ -33,11 +34,9 @@ format:
 |          Office          |       PowerShell       |            SQL             |
 
 |            |                   |  **Strengths**  |                     |           |
-|:----------:|:-----------------:|:---------------:|:-------------------:|:---------:|
+|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 | Creativity | Critical Thinking | Problem solving | Pattern Recognition | Integrity |
 :::
-
-# Jonathan Barnes
 
 **University of Minnesota Medical School, Minneapolis, MN**\
 **Graduate Research Assistant \| Advanced Research and Diagnostic Laboratory (Oct. 2023 -- May 2024)**\
