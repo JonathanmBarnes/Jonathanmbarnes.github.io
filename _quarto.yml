@@ -7,9 +7,9 @@ website:
   
   navbar:
     left:
-      - href: ./Sections/Resume/Resume.qmd
+      - href: ./Sections/Resume/index.qmd
         text: Resume
-      - href: ./Sections/Portfolio/Portfolio.qmd
+      - href: ./Sections/Portfolio/index.qmd
         text: Portfolio
       - href: ./Sections/Projects/CurrentProjects.qmd
         text: Current Projects
@@ -19,13 +19,13 @@ website:
             text: All Projects
           - href: ./Sections/Cat Photos/Cats.qmd
             text: Shiny Applications
-          - href: ./Sections/ReferenceGuides/References.qmd
+          - href: ./Sections/ReferenceGuides/index.qmd
             text: Reference Documents
           - href: ./Sections/ListofHelpfulThings.qmd
             text: Recomended Resources
     right:
       - icon: info
-        href: about.qmd
+        href: ./Sections/About/index.qmd
         text: About Me
     search: false
       

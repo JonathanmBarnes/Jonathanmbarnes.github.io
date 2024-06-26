@@ -2,7 +2,7 @@
 title: "RefernceGuides"
 listing:
   contents: 
-    - "BiostatPDF.qmd"
+    - "BiostatRef/index.qmd"
   sort: "date desc"
   type: table
   max-description-length: 1
