@@ -3,16 +3,16 @@ title: Hello!
 about:
   template: broadside
   image: Sections/Home/LuluPhoto.jpeg
-  image-width: 450px
+  image-width: 600px
 
 format:
   html:
     grid:
       sidebar-width: 0px
-      body-width: 1200px
+      body-width: 1400px
       margin-width: 0px
       gutter-width: 1.5rem
-    max-width: 1000px
+    max-width: 1600px
 
 toc: false
 ---
