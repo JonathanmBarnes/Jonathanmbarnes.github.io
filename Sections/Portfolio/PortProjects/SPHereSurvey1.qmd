@@ -6,7 +6,6 @@ thanks: "Special thank you to Jenny Porter and CeCe Altenhofen"
 date: 4-24-2024
 format: html
 editor: visual
-mainfont: Aptos
 embed-resources: true
 execute: 
   echo: false
