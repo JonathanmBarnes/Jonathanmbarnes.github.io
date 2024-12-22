@@ -1,8 +1,9 @@
 ---
+title: Hello!
 about:
-  template: trestles
-  image: ../Home/IMG_4371.jpeg
-  image-width: 1000px
+  template: broadside
+  image: Sections/Home/LuluPhoto.jpeg
+  image-width: 450px
 
 format:
   html:
@@ -11,36 +12,26 @@ format:
       body-width: 1200px
       margin-width: 0px
       gutter-width: 1.5rem
-    max-width: 1800px
+    max-width: 1000px
 
 toc: false
 ---
+Welcome to this conglomerate of things I've worked on or participated in. A more full picture can be found on my github page linked below.
 
-## Hello!
+At the moment I'm currently finishing my MPH in Public Health Data Science at the University of Minnesota's School of Public Health in the division of Biostatistics and Health Data Science. In that time I've been able to work as both a teaching assistant and a research assistant at the university while getting to be apart of many groups and organizations in my time.
 
-I'm Jonathan. Welcome to this conglomerate of things I've worked on or participated in. This website is a work in progress that I'll slowly be able to add to as I prepare projects for displaying. There are currently some items in the portfolio but more can be found on my github page.
+Prior to embarking on that adventure I finished my undergrad a short distance away at the University of St. Thomas completing a BS in Data Analytics with minors in Biology and Applied Statistics. During my time I worked full-time for Information and Technology Services (ITS), for over two years I completed numerous projects and initiatives I hope to be helpful for years to come.
 
-
-::: column-body
-At the moment I'm currently pursuing my MPH in Public Health Data Science at the University of Minnesota's School of Public Health in the division of Biostatistics and Health Data Science. Prior to embarking on that adventure I finished my undergrad at the University of St. Thomas completing a BS in Data Analytics with minors in Biology and Applied Statistics. During my time I worked full-time for Information and Technology Services (ITS) completing numerous projects and initiatives I hope continue to be helpful for years to come.
-
-My interest in health sciences began as a child centering around the intricacies of the human body and how it works. While in high school I was part of the biomedical sciences at Coon Rapids for four years; additionally I was the first student to participate in the biomedical and engineering programs. My primary goal in pursuing this degree is understand ways we can utilize statistical and data science methods to solve health problems or discover existing ones.
-
-### Academic Interests
-
-Health Information Accessibility specifically in the realms of nutrition and childhood development.
-
-Data visualization, dashboards, and communication
-
-Computational methods in Data Science and Statistics
-
-Teaching people programming and R skills
+My interest in health sciences began as a child centering around the intricacies of the human body and how it works. While in high school I was part of the biomedical sciences at Coon Rapids for four years; additionally I was the first student to participate in both the biomedical and engineering programs.
 
 ### Hobbies
 
+Data visualization, dashboards, and communication
+
 Cooking, and sometimes baking
 
-Plants
+Plants and botany 
+
+General exercise but primarily weightlifting
 
 And as always floor time. 
-:::
