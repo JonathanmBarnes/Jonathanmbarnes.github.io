@@ -49,13 +49,12 @@ format:
 +-----------------------+------------------------+----------------------+
 :::
 
-### University of Minnesota School of Public Health, Minneapolis, MN \
+### University of Minnesota, Minneapolis, MN \
 **Graduate Teaching Assistant \| Biostatistics 1 (Aug. 2024 -- Dec. 2024)**\
 Taught weekly lab sessions in R and SAS, helping students develop proficiency in statistical programming and data analysis. Provided individualized support during office hours, clarified course concepts. Evaluated and graded assignments and quizzes, offering constructive feedback to enhance student understanding and academic performance. Collaborated with the instructor to ensure alignment with course objectives and addressed student concerns effectively.
 
-### University of Minnesota Medical School, Minneapolis, MN \
 **Graduate Research Assistant (Oct. 2023 -- May 2024)**\
-Managed a project investigating biomarkers in the Health and Retirement Study (HRS), with a focus on Dementia and Alzheimer's disease. Conducted comprehensive analyses of plasma biomarkers, developed group classifications based on biomarker elevations, and performed differential gene expression analysis tied to cognitive decline. Built statistical models to examine relationships between cognitive scores and outputs from OLINK and Quanterix platforms. Explored the validation of a previously published aging clock model from ARIC study data using HRS datasets.
+Managed a project investigating biomarkers in the Health and Retirement Study (HRS), with a focus on Dementia and Alzheimer's disease. Conducted comprehensive analyses of plasma biomarkers, developed group classifications based on biomarker elevations, and performed differential gene expression analysis tied to cognitive decline. Built statistical models to examine relationships between cognitive scores and outputs from OLINK and Quanterix platforms. Explored the validation of a previously published aging clock model from ARIC study data using HRS datasets. \
 
 ### University of St. Thomas, St. Paul and Minneapolis, MN \
 **ITS Support Services Intern & Service Desk Technician (June 2022 -- Aug. 2023)**\
