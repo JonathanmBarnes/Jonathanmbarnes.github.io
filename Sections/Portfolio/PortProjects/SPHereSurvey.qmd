@@ -88,7 +88,7 @@ options(round = 2)
 umn_colors1 <- c("#7A0019", "#660000","#FFCC33", "#FFD700", "#333333", "#CCCCCC")
 umn_palette1 <- rep(umn_colors1, length.out = 14)
 
-SPHereData <- read_csv("~/Downloads/Final draft SPHere Lounge Student Survey (Responses) - Form Responses 1.csv")
+SPHereData <- read_csv("/Users/jonathan/Library/CloudStorage/OneDrive-Personal/MacDownloads070724/Final draft SPHere Lounge Student Survey (Responses) - Form Responses 1.csv")
 ```
 
 ```{r, message=FALSE, echo=FALSE, warning=FALSE}

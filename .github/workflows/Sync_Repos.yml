@@ -17,24 +17,24 @@ jobs:
       # Step 2: Clone the source repository
       - name: Clone Source Repository
         run: |
-          git clone --depth=1 https://github.com/JonathanmBarnes/SPHereSurvey2024.git source-repo
+          git clone --depth=1 https://github.com/JonathanmBarnes/SPHereSurvey2024.git Updates/source-repo
 
       # Step 3: Copy only `.qmd` files to the specific folder
       - name: Copy .qmd Files to Target Folder
         run: |
           mkdir -p Sections/Portfolio/PortProjects
-          find source-repo -type f -name '*.qmd' -exec cp {} Sections/Portfolio/PortProjects/ \;
+          find Updates/source-repo -type f -name '*.qmd' -exec cp {} Sections/Portfolio/PortProjects/ \;
 
       # Step 2: Clone the source repository
       - name: Clone Source Repository
         run: |
-          git clone --depth=1 https://github.com/JonathanmBarnes/Biostatistics-References.git source-repo1
+          git clone --depth=1 https://github.com/JonathanmBarnes/Biostatistics-References.git Updates/source-repo1
 
       # Step 3: Copy only `.qmd` files to the specific folder
       - name: Copy .qmd Files to Target Folder
         run: |
           mkdir -p Sections/Portfolio/PortProjects
-          find source-repo1 -type f -name '*.md' -exec cp {} Sections/Portfolio/PortProjects/ \;
+          find Updates/source-repo1 -type f -name '*.md' -exec cp {} Sections/Portfolio/PortProjects/ \;
 
       - name: Commit and Push Changes
         run: |
