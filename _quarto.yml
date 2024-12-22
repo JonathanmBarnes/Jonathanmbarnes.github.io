@@ -7,26 +7,12 @@ website:
   
   navbar:
     left:
-      - href: ./Sections/Resume/index.qmd
-        text: Resume
       - href: ./Sections/Portfolio/index.qmd
         text: Portfolio
-      - href: ./Sections/Projects/CurrentProjects.qmd
-        text: Current Projects
-      - text: Other Work
-        menu: 
-          - href: ./Sections/Projects/ProjectsTest.qmd
-            text: All Projects
-          - href: ./Sections/Cat Photos/Cats.qmd
-            text: Shiny Applications
-          - href: ./Sections/ReferenceGuides/index.qmd
-            text: Reference Documents
-          - href: ./Sections/ListofHelpfulThings.qmd
-            text: Recomended Resources
-    right:
-      - icon: info
-        href: ./Sections/About/index.qmd
-        text: About Me
+      - href: https://github.com/jonathanmbarnes
+        text: All Projects
+      - href: ./Sections/Resume/index.qmd
+        text: Resume
     search: false
       
   page-footer:
@@ -37,18 +23,11 @@ website:
           href: https://github.com/jonathanmbarnes
         - icon: linkedin
           href: https://www.linkedin.com/in/jonathanbarnes516
-          
-      right:
-        - href: ./Sections/Cat Photos/Cats.qmd
-          text: Cat Photos
 
 format:
   html:
     theme: 
       light: sandstone
-      dark: superhero
-    mainfont: Aptos
-    monofont: Museo Sans
     css: styles.css
     toc: true
     max-width: 1800px
