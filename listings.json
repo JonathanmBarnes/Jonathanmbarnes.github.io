@@ -1,17 +1,16 @@
 [
   {
+    "listing": "/Sections/ReferenceGuides/index.html",
+    "items": [
+      "/Sections/ReferenceGuides/BiostatRef/index.html"
+    ]
+  },
+  {
     "listing": "/Sections/Projects/ProjectsTest.html",
     "items": [
       "/Sections/Portfolio/PortProjects/BSRef.html",
       "/Sections/Portfolio/PortProjects/SPHereSurvey.html",
-      "/Sections/Portfolio/PortProjects/SPHereSurvey1.html",
       "/Sections/Portfolio/PortProjects/TDTPython.html"
-    ]
-  },
-  {
-    "listing": "/Sections/ReferenceGuides/index.html",
-    "items": [
-      "/Sections/ReferenceGuides/BiostatRef/index.html"
     ]
   },
   {
@@ -19,7 +18,6 @@
     "items": [
       "/Sections/Portfolio/PortProjects/BSRef.html",
       "/Sections/Portfolio/PortProjects/SPHereSurvey.html",
-      "/Sections/Portfolio/PortProjects/SPHereSurvey1.html",
       "/Sections/Portfolio/PortProjects/TDTPython.html"
     ]
   }
