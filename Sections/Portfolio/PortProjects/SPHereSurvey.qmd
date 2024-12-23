@@ -48,18 +48,33 @@ Based on the priority scoring students consistently would like to see better fur
 -   Priorities for those who use the lounge daily are furniture, collaborative space, and kitchen.
 
 ```{r, message=FALSE, echo =FALSE}
-library(tidyverse)
-library(tidymodels)
-library(ggpubr)
-library(viridis)
-library(ggstatsplot)
-library(knitr)
-library(wordcloud)
-library(wordcloud2)
-library(RColorBrewer)
-library(tm)
-library(webshot)
-library(rmarkdown)
+required_packages <- c(
+  "tidyverse",
+  "tidymodels",
+  "ggpubr",
+  "viridis",
+  "ggstatsplot",
+  "knitr",
+  "wordcloud",
+  "wordcloud2",
+  "RColorBrewer",
+  "tm",
+  "webshot",
+  "rmarkdown"
+)
+
+# Get the list of currently installed packages
+installed_packages <- rownames(installed.packages())
+
+# Install any missing packages
+for (pkg in required_packages) {
+  if (!pkg %in% installed_packages) {
+    install.packages(pkg, repos = "https://cran.rstudio.com/")
+  }
+}
+
+# Load all required packages
+lapply(required_packages, library, character.only = TRUE)
 
 options(scipen = 999)
 options(round = 2)
