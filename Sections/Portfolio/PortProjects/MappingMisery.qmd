@@ -110,7 +110,7 @@ I didn’t adjust for state like I was originally planning too and when looking 
 
 When I looked at the residuals my concern was not so much if it was missing, but if it was missing in the right direction. This means if the expected difference from the center mean is negative (less), then it was predicting a negative number. I found that several counties, largely on the west coast, were proving more difficult to predict. The reason I care about the direction is because I plan to make the outcomes into indicators to see if I can predict risk next.
 
-![](./PhotoDepPort/MM_Plots/Direct_Map.png)
+![](./PhotoDepPort/MM_Plots/DIrect_Map.png)
 
 # Other Plots
 
