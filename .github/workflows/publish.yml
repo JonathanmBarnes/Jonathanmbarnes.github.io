@@ -17,6 +17,21 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      # Cache R packages
+      - name: Cache R Packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/R
+          key: ${{ runner.os }}-R-${{ hashFiles('**/*.R', '**/*.qmd', '**/DESCRIPTION') }}
+          restore-keys: |
+            ${{ runner.os }}-R-
+
+      # Install R packages only if not already cached
+      - name: Install R Packages
+        run: |
+          Rscript -e 'if (!requireNamespace("pak", quietly = TRUE)) install.packages("pak")'
+          Rscript -e 'pak::pkg_install(pak::pkg_deps())'
+
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
