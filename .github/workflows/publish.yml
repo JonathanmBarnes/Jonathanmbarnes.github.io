@@ -43,6 +43,7 @@ jobs:
       # Step 6: Install R packages only if not already cached
       - name: Install R Packages
         run: |
+          Rscript -e 'if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")'
           Rscript -e 'if (!requireNamespace("pak", quietly = TRUE)) install.packages("pak")'
           Rscript -e 'deps <- renv::dependencies(); pak::pkg_install(unique(deps$Package))'
 
