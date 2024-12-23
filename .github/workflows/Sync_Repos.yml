@@ -34,7 +34,7 @@ jobs:
       - name: Copy .qmd Files to Target Folder
         run: |
           mkdir -p Sections/Portfolio/PortProjects
-          find Updates/source-repo1 -type f -name '*.md' -exec cp {} Sections/Portfolio/PortProjects/ \;
+          find Updates/source-repo1 -type f -name '*.qmd' -exec cp {} Sections/Portfolio/PortProjects/ \;
 
       - name: Commit and Push Changes
         run: |

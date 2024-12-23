@@ -3,9 +3,9 @@ title: "SPHere Survey Results"
 subtitle: "Results of the 2024 SPHere survey summarising what students would like to see improved and what should be prioritized"
 author: "Jonathan Barnes, Maya Koffski, Caylin Crawford"
 thanks: "Special thank you to Jenny Porter and CeCe Altenhofen"
+date: 4-24-2024
 format: html
 editor: visual
-mainfont: Aptos
 embed-resources: true
 execute: 
   echo: false
@@ -20,16 +20,10 @@ geometry:
   - right=.5in
   - top=.5in
   - bottom=.5in
+image: "./PhotoDepPort/WordPlot2.png"
 ---
 
-![](/Users/jonathan/Library/CloudStorage/OneDrive-Personal/UoM/Classes/Biostat/Biostat2/Homework/WordPlot2.png)
-
-\
-\
-\
-\
-\
-\
+![](./PhotoDepPort/WordPlot2.png)
 
 # Summary
 
@@ -53,33 +47,34 @@ Based on the priority scoring students consistently would like to see better fur
 -   Lighting is a consistent priority across groups; in those that visit less then once a month is their highest importance by a considerable margin. Shows possible reason for avoid the lounge.
 -   Priorities for those who use the lounge daily are furniture, collaborative space, and kitchen.
 
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-\
-
 ```{r, message=FALSE, echo =FALSE}
-library(tidyverse)
-library(tidymodels)
-library(ggpubr)
-library(viridis)
-library(ggstatsplot)
-library(knitr)
-library(wordcloud)
-library(wordcloud2)
-library(RColorBrewer)
-library(tm)
-library(webshot)
+required_packages <- c(
+  "tidyverse",
+  "tidymodels",
+  "ggpubr",
+  "viridis",
+  "ggstatsplot",
+  "knitr",
+  "wordcloud",
+  "wordcloud2",
+  "RColorBrewer",
+  "tm",
+  "webshot",
+  "rmarkdown"
+)
+
+# Get the list of currently installed packages
+installed_packages <- rownames(installed.packages())
+
+# Install any missing packages
+for (pkg in required_packages) {
+  if (!pkg %in% installed_packages) {
+    install.packages(pkg, repos = "https://cran.rstudio.com/")
+  }
+}
+
+# Load all required packages
+lapply(required_packages, library, character.only = TRUE)
 
 options(scipen = 999)
 options(round = 2)
@@ -251,11 +246,11 @@ data_long <- Satisfaction %>%
   subset(Group != "Never")
 
 # Plot
-ggplot(data_long, aes(x = as.factor(row), y = Value, fill = Group)) +
+ggplot(data_long, aes(x = reorder(row, ifelse(Group == "Everybody", -Value, Value)), y = Value, fill = Group)) +
   geom_col(position = "dodge") +
   labs(x = "", y = "Satisfaction", title = "Plot of Satisfaction by Group") +
   theme_minimal() +
-  theme(legend.position = "top", axis.text.y = element_text(size = 12), legend.margin = margin(0,0,0,-250)) + scale_fill_manual(values = c("#5B0013", "#FFB71E", "#333333", "#777677", "#900021", "#FFDE7A")) + coord_flip()
+  theme(legend.position = "top", axis.text.y = element_text(size = 12, hjust = 0), legend.margin = margin(0,0,0,-250)) + scale_fill_manual(values = c("#5B0013", "#FFB71E", "#333333", "#777677", "#900021", "#FFDE7A")) +  coord_flip() + scale_y_reverse()
 ```
 
 ```{r, eval = FALSE}
@@ -276,11 +271,11 @@ data_long <- Priority %>%
   subset(Group != "Never")
 
 # Plot
-ggplot(data_long, aes(x = as.factor(row), y = Value, fill = Group)) +
+ggplot(data_long, aes(x = reorder(row, ifelse(Group == "Everybody", -Value, Value)), y = Value, fill = Group)) +
   geom_col(position = "dodge") +
   labs(x = "", y = "Priority Score", title = "Plot of Priority by Group") +
   theme_minimal() +
-  theme(legend.position = "top", axis.text.y = element_text(size = 12), legend.margin = margin(0,0,0,-200)) + scale_fill_manual(values = c("#5B0013", "#FFB71E", "#333333", "#777677", "#900021", "#FFDE7A")) + coord_flip()
+  theme(legend.position = "top", axis.text.y = element_text(size = 12), legend.margin = margin(0,0,0,-200)) + scale_fill_manual(values = c("#5B0013", "#FFB71E", "#333333", "#777677", "#900021", "#FFDE7A")) + coord_flip() + scale_y_reverse()
 ```
 
 # Weighting Methods and Data Processing
