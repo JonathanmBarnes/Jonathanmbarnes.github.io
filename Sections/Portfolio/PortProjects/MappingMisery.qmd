@@ -19,7 +19,7 @@ geometry:
   - right=.5in
   - top=.5in
   - bottom=.5in
-image: "PhotoDepPort/MCAMap"
+image: "PhotoDepPort/MCAMap.png"
 ---
 
 # Introduction
