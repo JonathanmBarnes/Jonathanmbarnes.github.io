@@ -2,62 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/index.html</loc>
-    <lastmod>2024-12-23T16:09:55.993Z</lastmod>
+    <lastmod>2024-12-23T19:03:16.273Z</lastmod>
   </url>
   <url>
     <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/ListofHelpfulThings.html</loc>
-    <lastmod>2024-12-23T16:09:55.925Z</lastmod>
+    <lastmod>2024-12-23T19:03:16.133Z</lastmod>
   </url>
   <url>
     <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Portfolio/PortProjects/BSRef.html</loc>
-    <lastmod>2024-12-23T16:09:55.925Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Portfolio/PortProjects/TDTPython.html</loc>
-    <lastmod>2024-12-23T16:09:55.933Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Projects/CurrentProjects.html</loc>
-    <lastmod>2024-12-23T16:09:55.933Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Resume/index.html</loc>
-    <lastmod>2024-12-23T16:09:55.953Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/ReferenceGuides/BiostatRef/index.html</loc>
-    <lastmod>2024-12-23T16:09:55.933Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/About/index.html</loc>
-    <lastmod>2024-12-23T16:09:55.721Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Cat Photos/Cats.html</loc>
-    <lastmod>2024-12-23T16:09:55.721Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/ReferenceGuides/index.html</loc>
-    <lastmod>2024-12-23T16:09:55.933Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Resume/Resume.html</loc>
-    <lastmod>2024-12-23T16:09:55.953Z</lastmod>
-  </url>
-  <url>
-    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Projects/ProjectsTest.html</loc>
-    <lastmod>2024-12-23T16:09:55.933Z</lastmod>
+    <lastmod>2024-12-23T19:03:16.133Z</lastmod>
   </url>
   <url>
     <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Portfolio/PortProjects/SPHereSurvey.html</loc>
-    <lastmod>2024-12-23T16:09:55.933Z</lastmod>
+    <lastmod>2024-12-23T19:03:16.201Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Projects/ProjectsTest.html</loc>
+    <lastmod>2024-12-23T19:03:16.201Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Resume/Resume.html</loc>
+    <lastmod>2024-12-23T19:03:16.229Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/ReferenceGuides/index.html</loc>
+    <lastmod>2024-12-23T19:03:16.201Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Cat Photos/Cats.html</loc>
+    <lastmod>2024-12-23T19:03:15.929Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/About/index.html</loc>
+    <lastmod>2024-12-23T19:03:15.929Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/ReferenceGuides/BiostatRef/index.html</loc>
+    <lastmod>2024-12-23T19:03:16.201Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Resume/index.html</loc>
+    <lastmod>2024-12-23T19:03:16.229Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Projects/CurrentProjects.html</loc>
+    <lastmod>2024-12-23T19:03:16.201Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Portfolio/PortProjects/TDTPython.html</loc>
+    <lastmod>2024-12-23T19:03:16.201Z</lastmod>
+  </url>
+  <url>
+    <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Portfolio/PortProjects/MappingMisery.html</loc>
+    <lastmod>2024-12-23T19:03:16.133Z</lastmod>
   </url>
   <url>
     <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Portfolio/index.html</loc>
-    <lastmod>2024-12-23T16:09:55.933Z</lastmod>
+    <lastmod>2024-12-23T19:03:16.201Z</lastmod>
   </url>
   <url>
     <loc>https://JonathanmBarnes.github.io/Jonathanmbarnes.github.io/Sections/Shiny Apps/ShinyAppExamples.html</loc>
-    <lastmod>2024-12-23T16:09:55.953Z</lastmod>
+    <lastmod>2024-12-23T19:03:16.229Z</lastmod>
   </url>
 </urlset>
