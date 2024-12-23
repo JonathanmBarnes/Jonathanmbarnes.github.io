@@ -44,7 +44,7 @@ jobs:
       - name: Install R Packages
         run: |
           Rscript -e 'if (!requireNamespace("pak", quietly = TRUE)) install.packages("pak")'
-          Rscript -e 'pak::pkg_install(pak::pkg_deps())'
+          Rscript -e 'deps <- renv::dependencies(); pak::pkg_install(unique(deps$Package))'
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
