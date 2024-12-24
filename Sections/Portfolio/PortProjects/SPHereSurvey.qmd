@@ -4,7 +4,12 @@ subtitle: "Results of the 2024 SPHere survey summarising what students would lik
 author: "Jonathan Barnes, Maya Koffski, Caylin Crawford"
 thanks: "Special thank you to Jenny Porter and CeCe Altenhofen"
 date: 4-24-2024
-format: html
+format: 
+  html: 
+    code-links:
+      - text: Repository
+        href: https://github.com/JonathanmBarnes/SPHereSurvey2024
+        icon: github
 editor: visual
 embed-resources: true
 execute: 

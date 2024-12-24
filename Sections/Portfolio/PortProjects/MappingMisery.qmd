@@ -2,8 +2,13 @@
 title: "Mapping Misery"
 subtitle: "Predicting America’s Procession of Pain, Panic, and Poor Days using GMM clustering of a correspondance analysis and elastic net regression"
 author: "Jonathan Barnes"
-date: 12-18-2024
-format: html
+date: 12-11-2024
+format: 
+  html: 
+    code-links:
+      - text: Repository
+        href: https://github.com/JonathanmBarnes/Mapping-Misery-Project
+        icon: github
 editor: visual
 embed-resources: true
 execute: 
@@ -12,7 +17,7 @@ execute:
   error: false
 fig-dpi: 420
 fig-align: center
-fig-width: 9
+fig-width: 8
 fig-height: 4
 geometry:
   - left=.5in

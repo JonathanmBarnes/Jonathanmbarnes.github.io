@@ -6,6 +6,16 @@ date: 12-18-2024
 format: html
 editor: visual
 embed-resources: true
+fig-dpi: 420
+fig-align: center
+fig-width: 10
+fig-height: 4
+geometry:
+  - left=.5in
+  - right=.5in
+  - top=.5in
+  - bottom=.5in
+image: "./PhotoDepPort/CM_Images/Coef_CS.png"
 ---
 
 ## Abstract

@@ -1,0 +1,8 @@
+---
+title: "Basics for learning R"
+author: "Jonathan Barnes"
+date: 12-23-2024
+format: html
+editor: visual
+embed-resources: true
+---

@@ -3,7 +3,12 @@ title: "Tech Desk Tools"
 subtitle: "Overview of python application I created to aid productivity and reduce learning curve to working at the Tech Desk at the University of St. Thomas"
 author: "Jonathan Barnes"
 date: 4-18-2023
-format: html
+format: 
+  html: 
+    code-links:
+      - text: Repository
+        href: https://github.com/JonathanmBarnes/Tech-Desk-Tools-Python
+        icon: github
 editor: visual
 embed-resources: true
 execute: 
