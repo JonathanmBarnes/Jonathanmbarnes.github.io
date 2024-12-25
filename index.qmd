@@ -16,6 +16,7 @@ format:
 
 toc: false
 ---
+
 Welcome to this conglomerate of things I've worked on or participated in. A more full picture can be found on my github page linked below.
 
 At the moment I'm currently finishing my MPH in Public Health Data Science at the University of Minnesota's School of Public Health in the division of Biostatistics and Health Data Science. In that time I've been able to work as both a teaching assistant and a research assistant at the university while getting to be apart of many groups and organizations in my time.
@@ -30,8 +31,8 @@ Data visualization, dashboards, and communication
 
 Cooking, and sometimes baking
 
-Plants and botany 
+Plants and botany
 
 General exercise but primarily weightlifting
 
-And as always floor time. 
+And as always floor time.
