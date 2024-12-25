@@ -5,6 +5,41 @@
     justify-content: center;
 }
 
+body, p, {
+  font-family: "Avenir Next", Verdana ,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, th, td{
+  font-family: "Trebuchet MS", "Avenir", Verdana, sans-serif;
+  color: #137288;
+}
+
+
+
+
+code, pre {
+  font-family: Verdana, "Trebuchet MS", sans-serif;
+  font-size: 0.8em; /* Smaller than the default size */
+  font-style: italic; /* Makes the font italicized */
+  font-weight: normal; /* Ensures the text is not bold */
+  background-color: #eef2f6; /* Neutral light blue-gray */
+  color: #3182ce; /* Dark gray-blue for text */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  padding: 2.5px 4px; /* Adds some space around the text */
+}
+
+a {
+  color: #6f7c87; /* Example: Rich blue */
+  text-decoration: none; /* Removes underline (optional) */
+}
+
+a:hover {
+  color: #3182ce; /* Darker olive tone for hover */
+  text-decoration: none; /* Underline for emphasis */
+  font-weight: bold;
+}
+
+
 .btn-primary {
   padding: 12px 18px;
   font-size: 14px;
@@ -12,5 +47,6 @@
   justify-content: center;
   align-items: center;
   display: flex;
+  background-color: #174c77;
 }
 
