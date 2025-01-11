@@ -2,16 +2,12 @@
 title: "Biostat Reference Guide"
 subtitle: "Reference for biostatistics 1 and 2"
 author: "Jonathan Barnes"
-date: 12-23-2024
-format: 
-  html: 
-    code-links:
-      - text: Repository
-        href: https://github.com/JonathanmBarnes/Biostatistics-References
-        icon: github
+
+format: html
 editor: visual
 embed-resources: true
 ---
+
 
 ## Welcome
 
@@ -163,7 +159,7 @@ What is a package? Packages, or libraries (for our case they are the same), are 
 ### Packages Used {#packages-used}
 
 | Package | Description |
-|-------------------|-----------------------------------------------------|
+|------------------|------------------------------------------------------|
 | Tidyverse | Collection of common packages essential for most people |
 | Tidymodels | Collection of packages for model testing and training |
 | Psych | Used for summary statistics functions |
