@@ -3,13 +3,13 @@ about:
   id: Resume-Main
   template: broadside
   image: Headshot1.png
-  image-width: 600px
+  image-width: 250px
 
 format:
   html:
     grid:
       sidebar-width: 0px
-      body-width: 1200px
+      body-width: 1300px
       margin-width: 0px
       gutter-width: 1.5rem
     max-width: 1600px
@@ -18,52 +18,60 @@ format:
 # Jonathan Barnes
 
 ::: {#Resume-Main}
-+-----------------------+------------------------+----------------------+
-|                       | **Expertise**          |                      |
-+:=====================:+:======================:+:====================:+
-| Data Visualization    | R                      | Data Pipelines       |
-|                       |                        |                      |
-| Data Cleaning         | Programming            | Data Communication   |
-+-----------------------+------------------------+----------------------+
-|                       | **Proficiencies**      |                      |
-+-----------------------+------------------------+----------------------+
-| Applied Statistics    | Data Analysis          | Data Engineering     |
-|                       |                        |                      |
-| Machine Learning      | Research Methodologies | Predictive Modeling  |
-|                       |                        |                      |
-| Project Management    | Databases              | Data Privacy         |
-+-----------------------+------------------------+----------------------+
-|                       | **Languages & Tools**  |                      |
-+-----------------------+------------------------+----------------------+
-| R                     | Python                 | SQL                  |
-|                       |                        |                      |
-| Shiny                 | Quarto                 | Linux                |
-|                       |                        |                      |
-| Git                   | PowerShell             | API's                |
-+-----------------------+------------------------+----------------------+
-|                       | **Strengths**          |                      |
-+-----------------------+------------------------+----------------------+
-| Creativity            | Problem solving        | Critical Thinking    |
-|                       |                        |                      |
-| Pattern Recognition   | Conscientiousness      | Technical Writing    |
-+-----------------------+------------------------+----------------------+
++----------------------------------------+-----------------------------------------+----------------------------------------+
+|                                        | **Languages & Tools**                   |                                        |
++:======================================:+:=======================================:+:======================================:+
+| R                                      | Python                                  | SQL                                    |
+|                                        |                                         |                                        |
+| Shiny                                  | Bash                                    | Linux                                  |
+|                                        |                                         |                                        |
+| Git                                    | PowerShell                              | API's                                  |
+|                                        |                                         |                                        |
+| Tableau                                | Azure                                   | AWS                                    |
++----------------------------------------+-----------------------------------------+----------------------------------------+
+|                                        | **Competencies**                        |                                        |
++----------------------------------------+-----------------------------------------+----------------------------------------+
+| Data Visualization                     | Data Cleaning                           | Data Pipelines                         |
+|                                        |                                         |                                        |
+| Data Communication                     | Relational Databases                    | Geospatial Visualization               |
+|                                        |                                         |                                        |
+| Feature Engineering                    | Regression Analysis                     | Predictive Modeling                    |
+|                                        |                                         |                                        |
+| Machine Learning                       | Dimensionality Reduction                | Clustering                             |
+|                                        |                                         |                                        |
+| Classification                         | Longitudinal Data Analysis              | Data Privacy                           |
++----------------------------------------+-----------------------------------------+----------------------------------------+
+|                                        | **Statistical Methods**                 |                                        |
++----------------------------------------+-----------------------------------------+----------------------------------------+
+| Generalized Linear Models (GLM)        | Logistic Regression                     | Random Forest                          |
+|                                        |                                         |                                        |
+| Gradient Boosting                      | K-means                                 | Gaussian Mixture Models (GMM)          |
+|                                        |                                         |                                        |
+| Generalized Estimating Equations (GEE) | Principal Component Analysis (PCA)      | Multiple Correspondence Analysis (MCA) |
+|                                        |                                         |                                        |
+| Ridge Regression (L2)                  | Generalized Mixed Effects Models (GLMM) | Lasso Regression (L1)                  |
+|                                        |                                         |                                        |
+| Cox Hazard                             | Elastic Net Regression (L1/L2)          | Structural Equation Models (SEM).      |
++----------------------------------------+-----------------------------------------+----------------------------------------+
 :::
 
-### University of Minnesota, Minneapolis, MN \
+### University of Minnesota, Minneapolis, MN
+
 **Graduate Teaching Assistant \| Biostatistics 1 (Aug. 2024 -- Dec. 2024)**\
-Taught weekly lab sessions in R and SAS, helping students develop proficiency in statistical programming and data analysis. Provided individualized support during office hours, clarified course concepts. Evaluated and graded assignments and quizzes, offering constructive feedback to enhance student understanding and academic performance. Collaborated with the instructor to ensure alignment with course objectives and addressed student concerns effectively.
+As a Graduate Teaching Assistant for Biostatistics 1, I led weekly lab sessions in R and SAS, which helped students develop strong skills in statistical programming and data analysis. I provided individualized support during office hours, clarifying complex course concepts and offering personalized guidance to enhance student understanding. Additionally, I evaluated and graded assignments and quizzes, delivering constructive feedback to improve academic performance.
 
 **Graduate Research Assistant (Oct. 2023 -- May 2024)**\
-Managed a project investigating biomarkers in the Health and Retirement Study (HRS), with a focus on Dementia and Alzheimer's disease. Conducted comprehensive analyses of plasma biomarkers, developed group classifications based on biomarker elevations, and performed differential gene expression analysis tied to cognitive decline. Built statistical models to examine relationships between cognitive scores and outputs from OLINK and Quanterix platforms. Explored the validation of a previously published aging clock model from ARIC study data using HRS datasets. \
+I was a primary analyst for project investigating biomarkers in the NIA-funded Health and Retirement Study (HRS), with a focus on Dementia and Alzheimer's disease. I Conducted comprehensive analyses of plasma biomarkers, developed group classifications based on biomarker elevations, and performed differential gene expression analysis tied to cognitive decline. I built statistical models to examine relationships between cognitive scores and outputs from OLINK and Quanterix platforms and explored the validation of a previously published aging clock model from ARIC study data using HRS datasets.\
 
-### University of St. Thomas, St. Paul and Minneapolis, MN \
+### University of St. Thomas, St. Paul and Minneapolis, MN
+
 **ITS Support Services Intern & Service Desk Technician (June 2022 -- Aug. 2023)**\
-Received the ITS Outstanding Student Award for excellence in service and innovation. Developed and maintained a Python application critical to organizational operations and managed digital signage updates across multiple sites. Mentored junior staff, fostering technical skills and professional growth, while resolving over 4,500 service tickets and managing departmental ticketing systems. Authored comprehensive technical documentation and procedural guides for ITS staff, students, and faculty. Led efficiency enhancement initiatives to streamline processes and workflows. Served as an essential operational cornerstone, proactively addressing potential vulnerabilities and ensuring seamless operations.
+During my time in ITS Support Services, I received the ITS Outstanding Student Award for my contributions. I worked to proactively identify and fixed process gaps to keep workflows running smoothly and developed a Python application that supported the service desk’s operations. I also set up digital signage across various campuses to provide easy access to information. Additionally, I mentored junior students, helping them take on responsibilities independently once I left. Over two years, I handled over 4,500 service tickets and wrote technical documentation and procedural guides for The Tech Desk, ITS staff, students, and faculty.
 
 **ITS Rollout Intern (May 2022 -- Sept. 2022)**\
-Oversaw the imaging, setup, and software installation of over 1,500 computers for campus-wide use. Assisted with inventory management and ensured smooth transitions following replacements and setups.
+As an ITS Intern, I was responsible for imaging, configuring, and installing software on over 1,500 replacement computers, rough 2.5 times the usual annual replacement schedule. I played a key role in assembling an in-house virtual lab to reduce existing AWS EC2 instances in order to reduce operational costs and improved resource management.
 
 **ITS Service Desk Senior Student Technician (Aug. 2021 -- June 2022)**\
-Served as the primary point of contact for student workers at phone centers and walk-up desks. Created procedural documentation utilized by ITS staff and student workers to standardize operations and enhance service quality.
+In my role as an ITS Service Desk Senior Student Technician, I served as the primary point of contact and partial supervisor for student workers at both phone centers and walk-up desks. I developed and wrote procedural documentation that standardized operations and enhanced service quality within ITS.
 
 <a href="Resume_JonathanBarnes.pdf" download class="btn btn-primary"> <i class="bi bi-save"></i> Download Resume </a>
