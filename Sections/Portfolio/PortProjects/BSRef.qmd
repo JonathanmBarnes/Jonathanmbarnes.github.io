@@ -8,7 +8,6 @@ editor: visual
 embed-resources: true
 ---
 
-
 ## Welcome
 
 This is a markdown adapted version of the pdf also available in the repository. If there are typo’s, information I should add, or simply things I did wrong please let me know and I can update it. Additionally this markdown will contain additional depth since I can fit it in.
@@ -159,7 +158,7 @@ What is a package? Packages, or libraries (for our case they are the same), are 
 ### Packages Used {#packages-used}
 
 | Package | Description |
-|------------------|------------------------------------------------------|
+|----|----|
 | Tidyverse | Collection of common packages essential for most people |
 | Tidymodels | Collection of packages for model testing and training |
 | Psych | Used for summary statistics functions |

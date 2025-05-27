@@ -1,10 +1,12 @@
 project:
   type: website
+  output-dir: _site
 
 website:
   search: false
   title: "Jonathan Barnes"
-  
+  site-url: https://JonathanmBarnes.github.io
+
   navbar:
     left:
       - href: ./Sections/Resume/index.qmd
@@ -16,7 +18,7 @@ website:
       - href: ./Sections/Hobbies/index.qmd
         text: Hobbies
     search: false
-      
+
   page-footer:
       border: true
       background: light
@@ -34,7 +36,7 @@ format:
     toc: true
     max-width: 1200px
     page-layout: full
-    
+
 execute:
   freeze: auto
 
