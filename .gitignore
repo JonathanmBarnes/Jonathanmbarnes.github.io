@@ -1,0 +1,17 @@
+.Rproj.user
+.Rhistory
+.Rhistoryt
+.quarto/
+_*.local
+.RData
+.Ruserdata
+.DS_Store
+DataLoad.html
+GithubWebsite.Rproj
+_site/
+_freeze/
+*.lock
+Sections/Cat Photos
+.Rproj
+
+/.quarto/

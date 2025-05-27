@@ -1,0 +1,185 @@
+---
+title: "Predicting Child Mortality and Cesarean Delivery Outcomes with Generalized Linear Mixed Models"
+subtitle: "Analysis of the 1995 Guatemalan Survey of Family Health (EGSF)"
+author: "Jonathan Barnes, Tiffany Chang, Yiheng Liu, Elise Steichen, Sarah Vandenbergen"
+date: 12-18-2024
+format: html
+editor: visual
+embed-resources: true
+fig-dpi: 420
+fig-align: center
+fig-width: 10
+fig-height: 4
+geometry:
+  - left=.5in
+  - right=.5in
+  - top=.5in
+  - bottom=.5in
+image: "./PhotoDepPort/CM_Images/Coef_CS.png"
+---
+
+## Abstract
+
+The 1995 Guatemalan Survey of Family Health (EGSF) collected information regarding health of children under the age of five and women during pregnancy and childbirth from 60 communities within 4 departments in Guatemala. The purpose of this study was to assess how the community level factors such as insurance access, transportation access, birth location, and health beliefs influence maternal and child health outcomes. The source of correlation was the community, as women in each community likely had shared experiences or beliefs due to their common environment. We fit two generalized linear mixed models with random intercepts to predict the odds of child mortality and odds of cesarean section for women from the same community. We hypothesized that the odds of C-section and child mortality would be lower in women who gave birth at home, had health insurance, and believed they shouldn’t see trained providers if bleeding during pregnancy. We found that these covariates did not predict child mortality. We found that mothers who had access to insurance and mothers who gave birth at a hospital had higher odds of having a C-section. This information can be used to help inform health policies and initiatives that seek to improve the health of Guatemalan women.
+
+## Introduction
+
+The 1995 Guatemalan Survey of Family Health (EGSF) collected the health of children under the age of five and women during pregnancy and childbirth from 60 communities within 4 departments in rural Guatemala to understand a wide range of social, cultural, economic, and environmental conditions affecting maternal and child health1. Historically, few Guatemalans are able to access comprehensive healthcare, especially in rural areas. Public hospitals and clinics are highly underfunded and often lack basic medicine and equipment, since the government allocates minimal spending to healthcare. In some rural villages, there is no doctor or nurse, only a Non-Governmental Organization (NGO)-trained health worker who can provide very basic health services2.
+
+A US study found that infants born to mothers with private insurance had a significantly lower infant mortality rate (IMR), had significantly lower postneonatal mortality, low birth weight, vaginal breech delivery, preterm birth, and higher probability of prenatal care, compared with infants born to mothers with Medicaid3. Another study that estimated IMR between 2014 and 2016 using vital registration for 286 Latin American cities from eight countries found that mass transit availability (defined as availability of bus rapid transit and subway) was associated with 6.6% lower IMR4.
+
+### Outcomes and Research Questions
+
+This analysis investigates how community-related factors influence maternal and child health outcomes in rural Guatemala. This information can be used to help inform health policies and initiatives that seek to improve the health of Guatemalan women. The primary outcome of interest in this study is odds of child mortality and the secondary outcome is odds of birth delivery method (vaginal versus cesarean section). Therefore, our primary research question is as follows: How do the community-related factors of type of birth location, access to health insurance, access to emergency transportation, and mother’s beliefs regarding pregnancy health affect the odds that a woman from a given community will experience child mortality? The secondary research question investigates the same relationship between these factors on the outcome of delivery method.
+
+## Methods
+
+The study uses a stratified clustered sample design. Surveys were administered once per household in 4,782 households and to key local informants (e.g. healthcare providers) from 15 communities with fewer than 10,000 inhabitants in 4 departments of Guatemala. This analysis will account for correlation at the level of communities nested in departments by utilizing generalized linear mixed models. After initially joining the survey responses together, we had 3,226 responses. We then excluded 1,238 entries lacking consistent data, and removed survey entries not related to a woman’s first child, for a total of 1,988 responses. Some women had multiple children, but we wanted to focus on the first child to avoid multiple sources of clustering, especially as the risk of cesarean increases with a previous history of cesareans5. The final step was to exclude any individuals with missing data in the predictors of interest, for a total sample size of 1,897. These 1,897 women are from 60 communities. Each community is a cluster. There are anywhere from 15 to 49 women in each community, with the mean at 31.62 and the median at 31.5. Correlation arises due to shared individual and environmental characteristics that affect pregnancy and births, as a result of close proximity between women per cluster. For example, access to healthcare, socioeconomic status, and cultural attitudes towards seeing doctors or using birth control are expected to be similar in each area.
+
+### Variables of Interest
+
+All predictor variables were obtained through individual interviews with the women in the study. The primary outcome referred to as child mortality in this specific analysis is a yes/no response to the question “Is child still alive at the time of this interview?” The secondary outcome of the delivery method is a binary variable indicating either a vaginal or cesarean delivery. This study only looked at birth outcomes of the first child the mother had. Access to health insurance is a binary variable with the response options yes/no for if the mother/family has access to insurance through IGSS (the Guatemalan Social Security Institute) or another medical insurance. Transportation is a binary variable indicating if the family has access to some form of emergency transportation. Birthing location for most recent birth is a categorical variable collapsed from the original study response options to the following three categories: birth occurred at a home, a friend’s home, or a midwife's home; birth occurred at a hospital, private clinic, health center/post, or with a nurse; or birth occurred an unspecified/other location. Health belief is a categorical variable for the woman’s answers to the question, “If she should see a provider for vaginal bleeding during pregnancy, and if so, what type of provider should she see?” The response options from the original study were collapsed into the following categories: should not ask anyone, asks only a medical provider, or asks either a traditional provider or both types of providers. Mother’s age is a continuous variable that measures the age of the mother at her last birthday before the survey was collected.
+
+### Inclusion and exclusion criteria
+
+A total of 3226 mothers were initially included for study consideration. 1238 of these were excluded for lack of consistent data, or because they described a child that was not the woman’s firstborn. 1988 entries remained. Responses were further excluded if data was missing related to emergency transportation, birth delivery method, and health beliefs. Finally, 1897 entries remained for analysis. The data flowchart is also presented (Appendix A).
+
+### Approach to missing data
+
+Variables that took on values which were not included in the codebook were recoded as missing. Because of the low rates of missingness there were no special implications. To avoid excessive missingness, we decided to assume that women who gave birth to multiple children did so in the same place, which is completely reasonable due to the rural nature of the study and the fact that there were few health centers. This is also why children who were not the firstborn were excluded.
+
+### Exploratory data analysis
+
+Descriptive statistics were calculated looking at the overall sample of interest in this analysis as well as stratified by frequency of child mortality at time of interview and delivery method of first birth. This included the frequencies for each level of the predictor variables. All other covariates, including insurance access, access to emergency transportation, birth location, health beliefs, and mother’s age at the time of the interview, plus department identifier were displayed in each table with respective summary statistics. For interpretability of the descriptive statistics, numeric entries in the original dataset were recoded to corresponding categorical values according to the codebook, and combo entries were separated into multiple dummy variables. For geographic identifiers, more subdivided levels than departments such as municipalities were not displayed but accounted for in the following statistical analysis. Besides, information regarding the balances of women across clusters/communities and prevalence of missing data were examined using the original data. Child mortality and C-sections by community were explored in a bar plot (Appendix B).
+
+### Fitted Models
+
+To account for the fact that these women are clustered in communities, we utilized generalized linear mixed models (GLMM) with random intercepts to account for the correlation within the clusters. We fit two binomial GLMMs with logit links to answer our questions. We used the “lme4” package in R 4.4.1 to fit the models, the “esticon” function in the “doBy” package to estimate 95% confidence intervals, the “anova” function in “stats” package to perform likelihood ratio tests (LRT), and “Anova” function in the “car” package to obtain Type III tests results for categorical variables with more than two levels. A p-value of \< 0.05 was considered significant. The primary model we fit investigated the possible effects of health insurance, transportation, birth location, health belief, and an interaction between location and transportation on the odds of child mortality. The interaction term was included to explore if the effect of birth location on child mortality depended on mothers’ emergency transportation access. Those with emergency transit access might be more likely to give birth in a hospital for an emergency, and may be more likely to have better child mortality outcomes than someone who gives birth in a hospital without emergency transit access in an emergency, thus taking a long time to get there, and modifying any effect giving birth in a hospital might have on the child mortality outcome. The secondary model investigated the effect of these predictors on the log odds of having a cesarean delivery. Following both of these analyses, we refitted these models after removing the interaction term between birth location and transportation to see if that changed the results compared to the original model.
+
+## Results
+
+### Descriptive Data
+
+Of those who experienced child mortality, 15.9% of mothers reported having emergency transportation, whereas 84.1% of mothers did not. The mean age of mothers who experienced child mortality was 27.75 years old. 93.6% of mothers who experienced child mortality and reported their delivery method had a vaginal delivery, whereas 6.4% of women had a C-section. Of mothers with living children, most delivered at someone’s home (84.2%), followed by hospital/clinic deliveries (15.3%) and other locations (0.5%). Mothers with deceased children demonstrated a similar trend - 83.6% gave birth at home, 15.5% delivered at a hospital/clinic, and 0.9% reported “other.” For the health beliefs of mothers of deceased children, 92.3% said they would only see a medical provider, 5.5% would see a traditional provider or both providers, and 2.3% would not see anyone. Similarly, 91.7% of mothers with living children would only see a medical provider, 5% would see a traditional provider or both providers, and 3.3% would not see anyone. Of the mothers with deceased children, 90.5% reported having no insurance, compared to 86.6% of mothers with living children.
+
+Women with health insurance more frequently had cesarean deliveries (28.6%) compared to women without health insurance (12.0%). Women with emergency transportation more frequently had cesareans (34.3%) compared to those without (18.8%). For women who had a cesarean as their first birth, the most common delivery location for their most recent child was hospital/clinic (67.7%), while the most common location for those whose first birth was vaginal was at someone’s home (87.3%). The trends for health belief by cesarean deliveries did not differ much by those described above for child mortality. Among women with vaginal deliveries, 206 (11.5%) had experienced child mortality while the remaining 1586 (88.5%) did not. Among women with cesarean deliveries, 14 (13.3% had experienced child mortality while the remaining 91 (86.7%) had not.
+
+### Model Results
+
+#### Primary
+
+We concluded that health insurance, access to emergency transportation, birth location, health belief, and the effect of access to emergency transportation on birth location do not predict the odds of child mortality in a given community as no predictors were significant in the model (Figure 1). The random intercept (bi) represents the between-community variation. Compared to a woman from a given community who doesn’t have health insurance, the odds of child mortality for a woman from that community who does have health insurance are 33.3% lower (95% CI: 59.2% lower - 8.9% higher, p = 0.106), given that the other covariates are the same. Compared to a woman from a given community who doesn’t have emergency transportation, the odds of child mortality for a woman that does have access to emergency transportation from that community are 31.4% lower (95% CI: 57.3% lower to 10.3% higher, p = 0.12), given that the other covariates are the same. In a given community, women who gave birth at a hospital, clinic, or health post have 7% higher odds (95% CI: 34.5% lower to 74.9% higher, p = 0.786) of child mortality than women who gave birth at home when all other covariates were the same . In a given community, women who gave birth at an “other” location had 60.7% higher odds (95% CI: 82.9% lower to 1,388.4% higher, p = 0.676) of child mortality than women who gave birth at home when all other covariates were the same. In a given community, a woman who believed she should see a traditional provider when bleeding during pregnancy had 0.5% higher odds of child mortality (95% CI: 46.9% lower to 90% higher, p = 0.989) than a woman who believed she should see a trained provider when bleeding during pregnancy, when all other covariates were constant. In a given community, a woman who believed she should not see someone when bleeding during pregnancy had 34.4% lower odds of child mortality (95% CI: 74.3% lower to 67.2% higher, p = 0.377) than a woman who believed she should see a trained provider when bleeding during pregnancy when all other covariates were constant.
+
+In our model, we posited that the effect of birth location on child mortality depended on mothers’ emergency transportation access, but the p-values of our interaction terms between emergency transportation and birth location were high and resulted in wide CIs that spanned the null hypothesis.
+
+#### Secondary
+
+We fit a binomial GLMM with a random intercept and logit link . We found that mothers who gave birth at a hospital had 1,124.5% higher odds \[CI: 618.7% to 1,986.3% higher odds, p \< .001\] of having a C-section at first birth than mothers who gave birth at home, given they had the same values for the other covariates. Mothers who had access to insurance had 76.4% higher odds \[CI: 6.2% to 192.9% higher, p \< .05\] of having a C-section at first birth than mothers without access to health insurance, given they had the same values for the other covariates. A mother’s access to emergency transportation and health belief did not predict odds of c-section. A mother’s access to emergency transportation did not affect her birth location (Figure 2).
+
+#### Sensitivity Analysis
+
+To perform a sensitivity analysis with our primary model, we added the additional predictor of mother’s age at her last birthday (centered at the mean) (Appendix C). We expected maternal age to affect child mortality and delivery methods, such that older and younger women may have been more likely to undergo cesarean delivery or give birth to children with poor survival outcomes5. Additionally, we anticipated that maternal age may act in part as a precision variable for child mortality, as the odds of the woman’s first child being dead increases over time as the exposure to any life-threatening situations is cumulative. We found that for women in an average community, with every additional year of the mother’s age, the odds of the most recently born child being deceased at the time of interview increased by 5% (95% CI: 1.9% increase to 8.2% increase; p = .001). This was the only statistically significant predictor in the primary model. When we added the additional predictor of age to our secondary model, we found that age did not provide additional explanatory value. Adjusting for age did not have a large impact on the covariates of either model.
+
+For the primary model with interaction, the likelihood ratio test against the model adjusted for mother’s age in addition showed that the later offered a better explanatory power (p = .001), while the same test conducted on the secondary model did not show any difference in the goodness of fit with or without the age term (p = .798). Similar results were obtained for all alternate models of the secondary outcome, as none resulted in changes to the significance of insurance and location predictors. (Appendix D).
+
+## Discussion
+
+No community-level predictors were significantly associated with child mortality. Maternal age was in fact significant in the models it was added to, demonstrating that our understanding of its use as a precision variable was reasonable. However, its inclusion did not result in any significant estimates for any other terms. Women who gave birth in a hospital/clinic for their most recent birth had 12.245 higher odds of having a c-section for their first pregnancy. This is understandable as the risk of c-section increases if a woman has previously had a c-section. Access to insurance is associated with 76% higher odds of cesarean delivery. This makes sense, as women without insurance may be less likely to go to a hospital/clinic for their birth and instead have birth at a home, where c-sections are not an available option. In all models, the residual error was higher than the error of the fixed community effect; the SE of the community effect was very low. This indicates that within-community variability is higher than between-community variability - the data are less correlated than we thought.
+
+## Limitations
+
+The relative low number of C-sections contributed to the high variability of our model (in 12 of the 60 communities, no woman had a C-section, and for the 48 communities where at least one woman had a C-section, the number was low (Appendix B). The low number of women who responded that bleeding mothers should not see any type of provider (n = 60) could explain the extremely wide CIs in our model (Figures 2 & 3). The overall low number of insured families (n = 245) could explain the high variability of the insurance predictor in our models (Table 1).
+
+The study utilized mostly interviews, so most of the individual-level birth outcomes were obtained from mothers directly, introducing the possibility of survivor bias. By not including the rates of cesareans or child mortality for mothers who did not survive childbirth, there may be additional nuance regarding health predictors that this study cannot address. The original study’s utilization of community key informant interviews does a good job of collecting health information that is not at the level of surviving individuals, but combining the analysis of this dataset with vital statistics or hospital records, if available, may provide a more complete picture of community-level maternal health. In all models, the residual error was higher than the error of the fixed community effect; the SE of the community effect was very low. This indicates that within-community variability is higher than between-community variability - the data are less correlated than we thought. It may be appropriate to assume that the survey responses are independent rather than correlated due to the community clustering, and thus fit a logistic GLM instead.
+
+The available data on child age at time of death was not collected consistently so it could not be used to calculate child mortality before the age of one. Instead, our “child mortality” variable was whether the woman’s first born child was alive at the time of interview. The length of time between the child’s birth and interview data could not be calculated. This led us to explore maternal age as a precision variable instead. However, more clear relationships may be understood if mortality before age one is able to be modeled. Additionally, this analysis had to assume that women’s birth location for their most recent birth is similar to the location of their first birth as there was no question asked about the location for their most recent birth. Though this was not an unreasonable assumption, causal relationships could have been clearer if the birth location variable was also present for the woman’s most recent delivery.
+
+## Implications/Future Directions
+
+Our results clearly demonstrated that access to insurance is a predictor of cesarean delivery. This may indicate that women with insurance may be more likely to go to a hospital or health center with either surgical capabilities or the infrastructure to transport patients requiring a cesarean section to a higher level of care. However, this does not mean that only women with insurance are medically indicated to have c-sections. It may be interesting to see how insurance access interacts with health-related predictors of cesarean deliveries, such as fetal distress or positioning. It is unlikely that only women with insurance require c-sections, so better understanding the interaction between needing a c-section and insurance access not only on the outcome of cesarean delivery but other key indicators of maternal mortality, infant mortality, or severe complications such as hemorrhage or eclampsia may inform public health initiatives to improve insurance and healthcare access in rural Guatemala.
+
+## References
+
+Pebley, Anne R., and Goldman, Noreen. Guatemalan Survey of Family Health (EGSF), 1995. Inter-university Consortium for Political and Social Research \[distributor\], 2006-01-12.
+
+Cronin J. Healthcare System in Guatemala. International Citizens Insurance.
+
+Johnson DL, Carlo WA, Rahman AKMF, et al. Health Insurance and Differences in Infant Mortality Rates in the US. JAMA Netw Open. 2023;6(10):e2337690.
+
+Ortigoza, A. F., Tapia Granados, J. A., Miranda, J. J., Alazraqui, M., Higuera, D., Villamonte, G., Friche, A. A. L., Barrientos Gutierrez, T., & Diez Roux, A. V. (2021). Characterising variability and predictors of infant mortality in urban settings: findings from 286 Latin American cities. Journal of epidemiology and community health, 75(3), 264–270. .
+
+De Souza HCC, Perdoná GSC, Marcolin AC, et al. Development of caesarean section prediction models: secondary analysis of a prospective cohort study in two sub-Saharan African countries. Reprod Health. 2019;16(1):165. doi:
+
+## Appendix
+
+#### Main Figures and Tables
+
+![](./PhotoDepPort/CM_Images/Table1_Whole.png)
+
+![](./PhotoDepPort/CM_Images/Coef_CM.png)
+
+![](./PhotoDepPort/CM_Images/Coef_CS.png)
+
+## Supplemental Appendix A - Data Exclusion Flowchart
+
+![](./PhotoDepPort/CM_Images/Data_Excl.png)
+
+## Supplemental Appendix B - Community Clusters
+
+![](./PhotoDepPort/CM_Images/CommClust.png)
+
+## Supplemental Appendix C - Primary Model Results
+
+#### Table 1.
+
+Results of the primary model utilizing GLMMs to assess the relationship between community level predictors and the odds of child mortality. Significance of multi-level categorical predictors was calculated using Type III tests.
+
+![](./PhotoDepPort/CM_Images/T1.png)
+
+#### Table 2.
+
+Results of the primary model utilizing GLMMS to assess the relationship between community level predictors and the odds of child mortality, with the interaction term between transportation and location removed. Significance of multi-level categorical predictors was calculated using Type III tests.
+
+![](./PhotoDepPort/CM_Images/T2.png)
+
+#### Table 3.
+
+Results of the primary model utilizing GLMMs to assess the relationship between community level predictors and the odds of child mortality. Maternal age was added as a covariate and the interaction term between transportation and location was removed. Significance of multi-level categorical predictors was calculated using Type III tests.
+
+![](./PhotoDepPort/CM_Images/T3.png)
+
+#### Table 4.
+
+Results of the primary model utilizing GLMMs to assess the relationship between community level predictors and the odds of child mortality, with maternal age added as a covariate. Significance of multi-level categorical predictors was calculated using Type III tests.
+
+![](./PhotoDepPort/CM_Images/T4.png)
+
+## Supplemental Appendix D - Secondary Model Results
+
+#### Table 5.
+
+Results of the secondary model utilizing generalized linear mixed models to assess the relationship between community level predictors and the odds of c-section delivery. Significance of multi-level categorical predictors was calculated using Type III tests.
+
+![](./PhotoDepPort/CM_Images/T5.png)
+
+#### Table 6. Results of the secondary model utilizing generalized linear mixed models to assess the relationship between community level predictors and the odds of c-section delivery, with the interaction term between transportation and location removed. Significance of multi-level categorical predictors was calculated using Type III tests.
+
+![](./PhotoDepPort/CM_Images/T6.png)
+
+#### Table 7.
+
+Results of the secondary model utilizing generalized linear mixed models to assess the relationship between community level predictors and the odds of c-section delivery. Maternal age was added as a covariate and the interaction term between transportation and location was removed. Significance of multi-level categorical predictors was calculated using Type III tests.
+
+![](./PhotoDepPort/CM_Images/T7.png)
+
+#### Table 8.
+
+Results of the secondary model utilizing generalized linear mixed models to assess the relationship between community level predictors and the odds of c-section delivery, with maternal age added as a covariate. Significance of multi-level categorical predictors was calculated using Type III tests.
+
+![](./PhotoDepPort/CM_Images/T8.png)
+
+## Supplemental Appendix E - Conflicts of Interest and Acknowledgements
+
+The authors declare no conflicts of interest. However, all authors benefited from Lulu the sassy cat.
+
+![](./PhotoDepPort/CM_Images/Lulu.jpg)

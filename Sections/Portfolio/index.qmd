@@ -1,0 +1,9 @@
+---
+title: "Selected Projects"
+listing:
+  contents: 
+    - "PortProjects/*.qmd"
+  sort: "date desc"
+  type: default
+  max-description-length: 1
+---

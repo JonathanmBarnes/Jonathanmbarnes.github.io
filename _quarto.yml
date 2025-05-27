@@ -1,0 +1,42 @@
+project:
+  type: website
+
+website:
+  search: false
+  title: "Jonathan Barnes"
+  
+  navbar:
+    left:
+      - href: ./Sections/Resume/index.qmd
+        text: Resume
+      - href: ./Sections/Portfolio/index.qmd
+        text: Portfolio
+      - href: https://github.com/jonathanmbarnes
+        text: All Projects
+      - href: ./Sections/Hobbies/index.qmd
+        text: Hobbies
+    search: false
+      
+  page-footer:
+      border: true
+      background: light
+      center:
+        - icon: github
+          href: https://github.com/jonathanmbarnes
+        - icon: linkedin
+          href: https://www.linkedin.com/in/jonathanbarnes516
+
+format:
+  html:
+    theme:
+      light: sandstone
+    css: styles.css
+    toc: true
+    max-width: 1200px
+    page-layout: full
+    
+execute:
+  freeze: auto
+
+editor: visual
+

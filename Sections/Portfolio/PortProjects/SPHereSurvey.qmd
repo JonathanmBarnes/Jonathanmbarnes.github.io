@@ -1,0 +1,283 @@
+---
+title: "SPHere Survey Results"
+subtitle: "Results of the 2024 SPHere survey summarising what students would like to see improved and what should be prioritized"
+author: "Jonathan Barnes, Maya Koffski, Caylin Crawford"
+thanks: "Special thank you to Jenny Porter and CeCe Altenhofen"
+date: 4-24-2024
+format: 
+  html: 
+    code-links:
+      - text: Repository
+        href: https://github.com/JonathanmBarnes/SPHereSurvey2024
+        icon: github
+editor: visual
+embed-resources: true
+execute: 
+  echo: false
+  warning: false
+  error: false
+fig-dpi: 420
+fig-align: center
+fig-width: 9
+fig-height: 4
+geometry:
+  - left=.5in
+  - right=.5in
+  - top=.5in
+  - bottom=.5in
+image: "./PhotoDepPort/WordPlot2.png"
+---
+
+![](./PhotoDepPort/WordPlot2.png)
+
+# Summary
+
+The survey had 34 responses over the course of 25 days with everyone who responded being a SPH Student. Of those 34, at least 17 people visit the SPHere lounge once a week. Overall the responding students satisfaction with the space is moderate and most put between three and four (3.2 average) out of five when describing if they believe the lounge suits their needs.
+
+Highlights of what students are satisfied with were free printing, the printing station, and Lockers/personal storage. 5 categories had lower satisfaction scores (listed in decreasing order); kitchen amenities, lighting, furniture, decor/artwork, and number of outlets.
+
+Based on the priority scoring students consistently would like to see better furniture as a primary change. Secondary priorities should be lighting, collaborative work spaces, and independent work spaces. An important mention is that while kitchen amenities as a whole were not a top priority, for those who use the lounge daily it was a top priority.
+
+## Results and aspects by use frequency
+
+### Satisfaction
+
+-   Lack of proper outlets is consistent across groups
+-   Decor satisfaction decreased as use frequency decreased
+-   For those who use the lounge daily they are most dissatisfied with available technology and kitchen amenities with lighting, outlets, and private work space being close. This group however wasn't as dissatisfied with furniture
+
+### Priorities
+
+-   Importance of improving available technology is lower however in those who visit between 2-4 times a month it is their second highest priority. For those who included technology all but one had it as their highest.
+-   Lighting is a consistent priority across groups; in those that visit less then once a month is their highest importance by a considerable margin. Shows possible reason for avoid the lounge.
+-   Priorities for those who use the lounge daily are furniture, collaborative space, and kitchen.
+
+```{r, message=FALSE, echo =FALSE}
+library(tidyverse)
+library(tidymodels)
+library(ggpubr)
+library(viridis)
+library(ggstatsplot)
+library(knitr)
+library(wordcloud)
+library(wordcloud2)
+library(RColorBrewer)
+library(tm)
+library(webshot)
+library(rmarkdown)
+
+options(scipen = 999)
+options(round = 2)
+#set.seed(91)
+
+umn_colors1 <- c("#7A0019", "#660000","#FFCC33", "#FFD700", "#333333", "#CCCCCC")
+umn_palette1 <- rep(umn_colors1, length.out = 14)
+
+SPHereData <- read_csv("/Users/jonathan/Library/CloudStorage/OneDrive-Personal/MacDownloads070724/Final draft SPHere Lounge Student Survey (Responses) - Form Responses 1.csv")
+```
+
+```{r, message=FALSE, echo=FALSE, warning=FALSE}
+#5:15 are satis
+#18:24 are priority
+assign_numeric_value <- function(opinion) {
+  case_when(
+    opinion == "Not Applicable" ~ NA_integer_,
+    opinion == "Very dissatisfied" ~ 0,
+    opinion == "Dissatisfied" ~ 40,
+    opinion == "Satisfied" ~ 60,
+    opinion == "Very Satisfied" ~ 100,
+    TRUE ~ NA_integer_
+  )
+}
+
+# Define new variable names
+new_var_names <- c("satis1", "satis2", "satis3", "satis4", "satis5", "satis6", "satis7", "satis8", "satis9", "satis10")
+
+# Loop through columns 5 to 15
+for (i in 5:15) {
+    col <- colnames(SPHereData)[i]
+  new_col_name <- paste0("Satis", i - 4)
+  SPHereData <- SPHereData %>%
+    mutate(!!new_col_name := assign_numeric_value(.data[[col]]))
+}
+
+assign_numeric_value <- function(opinion) {
+  case_when(
+    opinion == NA ~ 0,
+    opinion == "Third highest" ~ 20,
+    opinion == "Second highest" ~ 50,
+    opinion == "Highest priority" ~ 100,
+    TRUE ~ 0
+  )
+}
+
+# Loop through columns 5 to 15
+for (i in 18:24) {
+    col <- colnames(SPHereData)[i]
+  new_col_name <- paste0("Priority", i - 17)
+  SPHereData <- SPHereData %>%
+    mutate(!!new_col_name := assign_numeric_value(.data[[col]]))
+}
+
+Data <- SPHereData %>%
+  mutate(HO_Visit = as.factor(`On average, during the 2023-2024 school year, how often have you visited the SPHere lounge?`))
+
+  
+WhyOtherSpace <- SPHereData$`What encourages you to use the space(s) you selected in the previous question? Select all that apply.` %>%
+  strsplit(",") %>%
+  unlist() %>%
+  str_trim(.,side = "both")
+
+WhyOtherSpace <- as.data.frame(WhyOtherSpace) %>%
+  group_by(WhyOtherSpace) %>%
+  summarise(Number = n()) %>%
+  arrange(Number)
+
+WhySPHere <- SPHereData$`What would encourage you to utilize the SPHere lounge more often?` %>%
+  strsplit(",") %>%
+  unlist() %>%
+  str_trim(.,side = "both")
+
+
+Priority <- Data[,c(42:48)] %>%
+  summarise(across(everything(), mean, na.rm = TRUE)) %>%
+  mutate_if(is.numeric, ~ round(., 1))
+
+PriByGroup <- Data[,c(4,42:48)] %>%
+  group_by(`On average, during the 2023-2024 school year, how often have you visited the SPHere lounge?`) %>%
+  summarise(across(everything(), mean, na.rm = TRUE)) %>%
+  mutate_if(is.numeric, ~ round(., 1))
+
+
+Satisfaction <- Data[,c(31:41)] %>%
+  summarise(across(everything(), mean, na.rm = TRUE)) %>%
+  mutate_if(is.numeric, ~ round(., 1))
+
+SatByGroup <- Data[,c(4,31:41)] %>%
+  group_by(`On average, during the 2023-2024 school year, how often have you visited the SPHere lounge?`) %>%
+  summarise(across(everything(), mean, na.rm = TRUE)) %>%
+  mutate_if(is.numeric, ~ round(., 1))
+
+RNames <- as.data.frame(SatByGroup)[,1]
+SatByGroup <- SatByGroup[,c(2:12)]
+rownames(SatByGroup) <- RNames
+rownames(Satisfaction) <- "Everyone"
+colnames(Satisfaction) <- colnames(Data[,5:15]) 
+colnames(SatByGroup) <- colnames(Data[,5:15])
+Satisfaction <- bind_rows(Satisfaction, SatByGroup) %>% t() %>% as.data.frame
+Satisfaction <- Satisfaction[,c(1,5,4,2,3,6)]
+
+RNames <- as.data.frame(PriByGroup)[,1]
+PriByGroup <- PriByGroup[,c(2:8)]
+rownames(PriByGroup) <- RNames
+rownames(Priority) <- "Everyone"
+colnames(Priority) <- colnames(Data[,18:24])
+colnames(PriByGroup) <- colnames(Data[,18:24])
+Priority <- bind_rows(Priority, PriByGroup) %>% t() %>% as.data.frame()
+Priority <- Priority[,c(1,5,4,2,3,6)]
+
+docs <- Corpus(VectorSource(WhySPHere))
+docs <- docs %>%
+  tm_map(removeNumbers) %>%
+  tm_map(removePunctuation) %>%
+  tm_map(stripWhitespace)
+docs <- tm_map(docs, content_transformer(tolower))
+docs <- tm_map(docs, removeWords, stopwords("en"))
+
+dtm <- TermDocumentMatrix(docs) 
+matrix <- as.matrix(dtm) 
+words <- sort(rowSums(matrix),decreasing=TRUE) 
+df <- data.frame(word = names(words),freq=words)
+
+```
+
+# Plots and Charts
+
+```{r, message=F, echo = F, fig.width=9, fig.height=2.5}
+HOVisit <- Data %>%
+  group_by(HO_Visit) %>%
+  summarise(Number = n()) %>%
+  arrange(Number)
+
+
+Tab <- table(Data$HO_Visit)
+PropTab <- prop.table(Tab)*100
+
+umn_colors <- c("#7A0019") 
+umn_palette <- rep(umn_colors, length.out = 5)
+
+
+ggplot(data = HOVisit, aes(x = HO_Visit, y = Number, fill = HO_Visit)) + geom_col() + theme_pubclean() + xlab("") + theme(legend.position = "none", axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1, size = 10)) + scale_fill_manual(values = umn_palette) + ggtitle("How Often Do You Visit the SPHere")
+
+kable(round((bind_rows(Tab,PropTab)),2),align = "l")
+```
+
+```{r, message=F, echo = F, fig.width= 9, fig.height= 3}
+
+umn_colors <- c("#7A0019")
+umn_palette <- rep(umn_colors, length.out = 14)
+
+# Why people go other places
+ggplot(data = WhyOtherSpace, aes(x = reorder(WhyOtherSpace, Number), y = Number, fill = WhyOtherSpace)) + geom_col() + theme_pubclean() + xlab("") + theme(legend.position = "none", axis.text.y = element_text(size = 12)) + scale_fill_manual(values = umn_palette) + ggtitle("What Draws You To Other Spaces") + coord_flip()
+
+```
+
+# Satisfaction (Out of 100)
+
+```{r}
+kable(Satisfaction[,c(1:5)])
+```
+
+```{r, fig.height=11, fig.width=8.5}
+Satisfaction$row <- row.names(Satisfaction)
+
+data_long <- Satisfaction %>%
+  pivot_longer(-row, names_to = "Group", values_to = "Value") %>%
+  subset(Group != "Never")
+
+# Plot
+ggplot(data_long, aes(x = reorder(row, ifelse(Group == "Everybody", -Value, Value)), y = Value, fill = Group)) +
+  geom_col(position = "dodge") +
+  labs(x = "", y = "Satisfaction", title = "Plot of Satisfaction by Group") +
+  theme_minimal() +
+  theme(legend.position = "top", axis.text.y = element_text(size = 12, hjust = 0), legend.margin = margin(0,0,0,-250)) + scale_fill_manual(values = c("#5B0013", "#FFB71E", "#333333", "#777677", "#900021", "#FFDE7A")) +  coord_flip() + scale_y_reverse()
+```
+
+```{r, eval = FALSE}
+umn_colors <- c("#7A0019", "#660000","#FFCC33", "#FFD700", "#333333")
+umn_palette <- rep(umn_colors, length.out = 51)
+wordcloud2(data=df, size=1, fontFamily = "Aptos", shape = "circle", color = umn_palette, rotateRatio = .2)
+
+```
+
+# What Should be Prioritized
+
+```{r, fig.height=7.5, fig.width=8.5}
+kable(Priority[,c(1:5)])
+Priority$row <- row.names(Priority)
+
+data_long <- Priority %>%
+  pivot_longer(-row, names_to = "Group", values_to = "Value") %>%
+  subset(Group != "Never")
+
+# Plot
+ggplot(data_long, aes(x = reorder(row, ifelse(Group == "Everybody", -Value, Value)), y = Value, fill = Group)) +
+  geom_col(position = "dodge") +
+  labs(x = "", y = "Priority Score", title = "Plot of Priority by Group") +
+  theme_minimal() +
+  theme(legend.position = "top", axis.text.y = element_text(size = 12), legend.margin = margin(0,0,0,-200)) + scale_fill_manual(values = c("#5B0013", "#FFB71E", "#333333", "#777677", "#900021", "#FFDE7A")) + coord_flip() + scale_y_reverse()
+```
+
+# Weighting Methods and Data Processing
+
+### Weighting
+
+To understand priorities and satisfaction more effectively I chose to weight the "very" responses and the higher priorities more heavily.
+
+This meant for satisfaction I assigned those who responded very dissatisfied 0, dissatisfied 40, satisfied 60, and very satisfied 100. Those who replied "Not Applicable" were assigned an NA.
+
+For priority I assigned third priorities 20, second priorities 50, and highest priorities as 100, blank answers were assigned 0.
+
+### Data Processing
+
+All analysis and creation of visuals were performed in R. The code for the processing, cleaning, and writing of this doc can be found [here](https://github.com/JonathanmBarnes/SPHereSurvey2024) on github.

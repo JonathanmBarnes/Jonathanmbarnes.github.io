@@ -1,0 +1,15 @@
+---
+title: "Biostat Reference Sheet"
+subtitle: "Reference Sheet for statistical R programming. Provides code to perform statistical tests along with assumptions, plotting, and methods to obtaining summary statistics in data."
+author: "Jonathan Barnes"
+date: "5-4-2024"
+format:
+  html: 
+    grid:
+      sidebar-width: 0px
+      body-width: 1100px
+      margin-width: 0px
+      gutter-width: 1rem
+---
+
+![](../referenceFiles/Biostat_ReferenceSheet_R.pdf){img.style.zoom="100%" fig-align="center" width="11.5in" height="7in"}

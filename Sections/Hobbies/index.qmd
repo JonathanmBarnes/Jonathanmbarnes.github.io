@@ -1,0 +1,23 @@
+---
+about:
+  template: marquee
+  image: ../Home/IMG_0470.jpeg
+
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      margin-width: 0px
+      body-width: 800px
+      gutter-width: 1.5rem
+    max-width: 1600px
+
+toc: false
+---
+### Things in my spare time
+
+Home Cooking, sometimes baking, and Plants
+
+Exercising. Weightlifting & Walking along Mississippi mainly
+
+And as always floor time with my cat.

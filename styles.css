@@ -1,0 +1,103 @@
+/* css styles */
+/* Centered content */
+.centered {
+    text-align: center;
+    justify-content: center;
+}
+
+nav.navbar.navbar-expand-lg {
+  background-color: #495057;
+}
+
+div.about-entity {
+  border-radius: 4px;
+  padding: 2px 3px;
+}
+
+img.thumbnail-image {
+  border-radius: 4px;
+  padding: 1px 1.5px;
+  background-color: #f2f5f9; 
+}
+
+body, p, {
+  font-family: "Avenir Next", Verdana ,sans-serif;
+}
+
+h3, h4, h5, th, td{
+  font-family: "Trebuchet MS", "Avenir", Verdana, sans-serif;
+}
+
+
+h6{
+  font-family: Verdana, "Trebuchet MS", "Avenir", sans-serif;
+  color: #137288;
+  font-style: italic;
+}
+
+
+h1, h2{
+  font-family: "Trebuchet MS", "Avenir", Verdana, sans-serif;
+  color: #137288;
+}
+
+code, pre {
+  font-family: Verdana, "Trebuchet MS", sans-serif;
+  font-size: 0.8em; /* Smaller than the default size */
+  font-style: italic; /* Makes the font italicized */
+  font-weight: normal; /* Ensures the text is not bold */
+  background-color: #eef2f6; /* Neutral light blue-gray */
+  color: #3182ce; /* Dark gray-blue for text */
+  border-radius: 5px; /* Rounded corners for a modern look */
+  padding: 2.5px 4px; /* Adds some space around the text */
+}
+
+a {
+  color: #343A40;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #137288;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.no-external:hover{
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+a.navbar-brand:hover{
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+
+
+.btn-primary {
+  padding: 12px 18px;
+  font-size: 14px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #174c77;
+}
+
+.quarto-title-banner {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  height: 60vh !important; /* Adjust height as needed (e.g., 50vh, 70vh) */
+}
+
+/* Optional: ensure responsiveness below mobile breakpoints */
+@media (max-width: 500px) {             /* pick the breakpoint you prefer */
+  .about-image.round {
+    width: 60vw !important;            /* 60 % of the viewport width      */
+    height: 60vw !important;           /* keep it square                  */
+  }
+}
+
+

@@ -1,0 +1,36 @@
+---
+title: Resume
+date-modified: 05/27/25
+
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      body-width: 1000px
+      margin-width: 0px
+      gutter-width: 1.5rem
+---
+
+#### Note: On some devices the file will not render properly. In that case please click download to view the PDF
+
+<embed src="./Resume_JonathanBarnes.pdf" type="application/pdf" class="pdf-embed">
+
+<style>
+.pdf-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.pdf-embed {
+  width: 100%;
+  height: 80vh;
+  border: none;
+  margin: 0;
+  padding: 1vh;
+  display: block;
+}
+</style>
+
+<a href="Resume_JonathanBarnes.pdf" download class="btn btn-primary"> <i class="bi bi-save"></i>  Download Resume </a>

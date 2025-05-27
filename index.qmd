@@ -1,0 +1,28 @@
+---
+title: Hi I'm Jonathan
+about:
+  template: jolla
+  image: Sections/Home/GradHeadshot_Rahma.jpeg
+  image-width: 28em
+
+format:
+  html:
+    grid:
+      sidebar-width: 0px
+      body-width: 1050px
+      margin-width: 0px
+      gutter-width: 1.5rem
+    max-width: 1600px
+    css: styles.css
+    
+
+toc: false
+---
+
+### Welcome to this conglomerate of things I've worked on.
+
+At the moment I'm finishing the last remaining projects for my MPH in Public Health Data Science at the University of Minnesota's School of Public Health, in the division of Biostatistics and Health Data Science. I also currently work as a research assistant for the Center for Public Health Systems (CPHS) working to develop an ETL pipeline for federal spending data specific to public health. Prior to my masters I finished undergrad at the University of St. Thomas completing a BS in Data Analytics with a Biology domain, and adding minors in Biology and Applied Statistics. During that time I worked full-time, initially for Target over the pandemic, and then for Information and Technology Services (ITS) in support services at the university.
+
+My interest in health sciences began as a child where I often found myself entertained with the intricacies of the human body and how it works together. While in high school I was able to be part of the biomedical sciences program at Coon Rapids for four years and additionally I was the first student to participate in both the biomedical and engineering programs. During that time I further developed a love for the quantitative side of health and then following my required semester of statistics in undergrad I officially made the switch from Biology to Data Analytics, with a domain area of Biological Sciences. This allowed me to further develop and apply my abilities with coding and numbers to topics I love in Biology, Public Health, and general Health Sciences.
+
+Besides my current position, current projects include introductory statistics modules for Public Health Students to be completed prior to taking biostatistics, and developing an online shiny application to assist secondary school students in performing analysis based on collected data.
