@@ -1,0 +1,68 @@
+on:
+  workflow_dispatch:
+  push:
+    branches: 
+      - main
+    paths:
+      - '**/*.R'
+      - '**/*.qmd'
+
+name: Quarto Publish
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # Step 1: Check out the repository
+      - name: Check out Repository
+        uses: actions/checkout@v4
+
+      # Step 2: Install R
+      - name: Install R
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            r-base \
+            r-base-dev
+
+      # Step 3: Set up Quarto
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      # Step 4: Set a writable library path for R packages
+      - name: Set Custom R Library Path
+        run: |
+          mkdir -p ~/R/library
+          echo 'R_LIBS_USER=~/R/library' >> ~/.Renviron
+
+      # Step 5: Cache R packages
+      - name: Cache R Packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/R
+          key: ${{ runner.os }}-R-${{ hashFiles('**/*.R', '**/*.qmd', '**/DESCRIPTION') }}
+          restore-keys: |
+            ${{ runner.os }}-R-
+
+      # Step 6: Install System Libraries (if needed)
+      - name: Install System Libraries
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev
+
+      # Step 7: Install R packages only if not already cached
+      - name: Install R Packages
+        run: |
+          Rscript -e 'if (!requireNamespace("renv", quietly = TRUE)) install.packages("renv")'
+          Rscript -e 'if (!requireNamespace("pak", quietly = TRUE)) install.packages("pak")'
+          Rscript -e 'deps <- renv::dependencies(); pak::pkg_install(unique(deps$Package))'
+
+      # Step 8: Render and Publish
+      - name: Render and Publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
