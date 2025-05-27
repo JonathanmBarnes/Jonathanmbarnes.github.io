@@ -53,18 +53,17 @@ Based on the priority scoring students consistently would like to see better fur
 -   Priorities for those who use the lounge daily are furniture, collaborative space, and kitchen.
 
 ```{r, message=FALSE, echo =FALSE}
-library(tidyverse)
-library(tidymodels)
-library(ggpubr)
-library(viridis)
-library(ggstatsplot)
-library(knitr)
-library(wordcloud)
-library(wordcloud2)
-library(RColorBrewer)
-library(tm)
-library(webshot)
-library(rmarkdown)
+library(readr)       # read_csv()
+library(dplyr)       # mutate(), case_when(), summarise(), …
+library(tidyr)       # pivot_longer()
+library(stringr)     # str_trim()
+library(ggplot2)     # ggplot(), geoms, scales
+
+# extras
+library(ggpubr)      # theme_pubclean()
+library(knitr)       # kable()
+library(tm)          # text-mining functions
+library(wordcloud2)  # word-cloud widget (optional)
 
 options(scipen = 999)
 options(round = 2)
