@@ -1,13 +1,79 @@
 /* css styles */
 /* Centered content */
+
 .centered {
     text-align: center;
     justify-content: center;
 }
 
-nav.navbar.navbar-expand-lg {
-  background-color: #495057;
+html, body {
+  overscroll-behavior: none;
 }
+
+
+.footer-logo {
+  height: 35px;      /* adjust as needed */
+  opacity: 0.85;
+}
+
+
+h1.title a {
+  display: inline-block; /* REQUIRED for Safari */
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    color 0.15s ease,
+    letter-spacing 0.15s ease;
+}
+
+h1.title a:hover {
+  color: #2f6f8f;
+  letter-spacing: 0.02em;
+}
+
+
+/* Subtle page background */
+body {
+  background-color: #f7f6f3; /* soft warm-gray */
+  line-height: 1.55;
+}
+
+/* Keep main content area white */
+main.content, .content, .page-columns {
+  background: #ffffff;
+}
+
+
+.navbar-brand {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 500;
+}
+
+nav.navbar.navbar-expand-lg {
+  background-color: #5c6770;
+  border-bottom: 3px solid rgba(255,255,255,0.08);
+}
+nav.navbar .navbar-nav .nav-link {
+  font-size: .85rem;
+}
+
+
+
+
+
+
+.navbar > .container-fluid {
+  max-width: 900px;        /* adjust to taste */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+
 
 div.about-entity {
   border-radius: 4px;
@@ -15,13 +81,14 @@ div.about-entity {
 }
 
 img.thumbnail-image {
-  border-radius: 4px;
+  border-radius: 4;
   padding: 1px 1.5px;
-  background-color: #f2f5f9; 
+  background-color: #f2f5f9;
 }
 
-body, p, {
+body, p {
   font-family: "Avenir Next", Verdana ,sans-serif;
+  font-size: 110%;
 }
 
 h3, h4, h5, th, td{
@@ -70,7 +137,77 @@ a.no-external:hover{
 
 a.navbar-brand:hover{
   text-decoration: none;
-  font-weight: inherit;
+  font-weight: 550;
+  letter-spacing: 0.05em;
+}
+
+
+.nav-footer .container,
+.nav-footer .container-fluid {
+  display: flex;
+  align-items: center;              /* center all three regions by height */
+  justify-content: space-between;   /* left | center | right */
+  gap: 1rem;
+}
+
+/* Remove default paragraph margins */
+.nav-footer p {
+  margin: 0;
+}
+
+/* Left/right: actively center their text vertically */
+.nav-footer-left,
+.nav-footer-right {
+  display: flex;                    /* ← key fix */
+  align-items: center;              /* vertical centering */
+  font-size: 0.9rem;
+  line-height: 1.5;                 /* slight breathing room */
+  flex: 1 1 0;
+}
+
+/* Alignment direction */
+.nav-footer-left  { justify-content: flex-start; }
+.nav-footer-right { justify-content: flex-end;   }
+
+/* Center block */
+.nav-footer-center {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  line-height: 1;
+}
+
+/* Icons */
+.nav-footer-center .bi {
+  font-size: 1.9rem;
+  line-height: 1.35;
+  gap: 1rem;   /* subtle */
+  margin-inline: 0.15rem;
+}
+
+/* Images */
+.nav-footer-center img {
+  height: 2.4rem;
+  width: auto;
+  display: block;
+  margin-inline: 0.3rem;
+}
+
+
+
+/* Jolla column page: remove the big top offset */
+.quarto-about-jolla {
+  margin-top: 5% !important;
+}
+
+
+
+
+/* Reduce margin above first image */
+main.content img:first-child {
+  margin-top: 0;
 }
 
 
@@ -82,7 +219,7 @@ a.navbar-brand:hover{
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color: #174c77;
+  background-color: #3a6f8a;
 }
 
 .quarto-title-banner {
