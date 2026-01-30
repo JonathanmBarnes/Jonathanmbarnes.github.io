@@ -1,6 +1,18 @@
 /* css styles */
 /* Centered content */
 
+
+.dropdown-header {
+  font-weight: 700;
+  opacity: 0.9;
+  pointer-events: none;
+  text-align: center;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  text-align: center;
+}
+
 .centered {
     text-align: center;
     justify-content: center;
@@ -69,8 +81,8 @@ nav.navbar .navbar-nav .nav-link {
   max-width: 900px;        /* adjust to taste */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2rem;
-  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
 }
 
 
