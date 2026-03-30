@@ -7,10 +7,12 @@
   opacity: 0.9;
   pointer-events: none;
   text-align: center;
+  font-family: "Segoe UI", system-ui ,sans-serif;
 }
 
 .navbar .dropdown-menu .dropdown-item {
   text-align: center;
+  font-family: "Segoe UI", system-ui ,sans-serif;
 }
 
 .centered {
@@ -104,29 +106,29 @@ img.thumbnail-image {
 }
 
 body, p {
-  font-family: "Segoe UI", Verdana ,sans-serif;
+  font-family: "Segoe UI", system-ui ,sans-serif;
   font-size: 105%;
 }
 
 h3, h4, h5, th, td{
-  font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
 }
 
 
 h6{
-  font-family: Verdana, "Trebuchet MS", "Segoe UI", sans-serif;
+  font-family: system-ui, "Trebuchet MS", "Segoe UI", sans-serif;
   color: #1f6c73;
   font-style: italic;
 }
 
 
 h1, h2{
-  font-family: "Trebuchet MS", "Segoe UI", Verdana, sans-serif;
+  font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
   color: #1f6c73;
 }
 
 code, pre {
-  font-family: Verdana, "Trebuchet MS", sans-serif;
+  font-family: system-ui, "Trebuchet MS", sans-serif;
   font-size: 0.8em; /* Smaller than the default size */
   font-style: italic; /* Makes the font italicized */
   font-weight: normal; /* Ensures the text is not bold */
